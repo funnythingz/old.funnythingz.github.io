@@ -1,0 +1,122 @@
+<!Doctype html>
+<html lang="ja">
+<head>
+
+<meta charset="utf-8">
+<!--
+┏━━━━━━┓′′′′′′′′′′′′′′′′′′′┏━━━┓┏━┓′′′′′┏━┓′┏━━━━━┓┏━┳━┓┏━━━━━━┓┏━┳━┓
+┃′′′′′′┃′′′′′′′′′′′′′′′′′′′┃′′′┃┃′┃┏━━━┓┃′┃┏┛′′′′′┃┃′┃′┃┃′′′′′′┃┃′┃′┃
+┗━━━━┓′┃′′′′′′′┏━━━━┓′′′′′′┗━━━┛┃′┃┃′′′┃┃′┃┃′┏━━┓′┃┃′┃′┃┗━━━┓′┏┛┃′┃′┃
+′′′′′┃′┃′′′′′′′┃′′′′┃′′′′′′┏━━━┓┃′┃┗━━━┛┃′┃┃′┃′′┃′┃┗━┻━┛′′′┏┛′┃′┗━┻━┛
+′′′′′┃′┃┏━━━━┓′┗━━━━┛′′′′┏┓┃′′′┃┃′┃′′′′′┃′┃┃′┃′′┃′┃′′′′′′′┏┛′┏┛′′′′′′
+′′′′′┃′┃┗┓┏┓′┃′′′′′′′′′┏━┛┃┗━━━┛┃′┃′′′′′┃′┃┗━┛′┏┛′┃′′′′′′┏┛′′┗┓′′′′′′
+′′′′┏┛′┃′┃┣┛┏┛′′′′′′′′┏┛′┏┛′′′′┏┛′┃′′′′┏┛′┃′′′′┃′┏┛′′′′′┏┛′┏┓′┗┓′′′′′
+′┏━━┛′┏┛′┃┣━┛′┏━━━━━━┓┗┫′┃′┏━━━┛′┏┛┏━━━┛′┏┛′′┏━┛′┃′′′′′′┃′┏┛┗┓′┃′′′′′
+′┃′′′┏┛′′┃┃′′′┃′′′′′′┃′┃′┃′┃′′′′┏┛′┃′′′′┏┛′′′┃′′┏┛′′′′′′┃′┃′′┃′┃′′′′′
+′┗━━━┛′′′┗┛′′′┗━━━━━━┛′┗━┛′┗━━━━┛′′┗━━━━┛′′′′┗━━┛′′′′′′′┗━┛′′┗━┛′′′′′
+-->
+
+<meta name="description" content="fuckでクレイジーでトリッキーなwebエンジニアの集団、それがfunnythingz!!">
+<meta name="keywords" content="funnythingz,ひろぽっぽれす,makingmachinez,不要なブログ">
+
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="format-detection" content="telephone=no">
+<meta name="viewport" content="width=device-width">
+
+<link rel="shortcut icon" href="/favicon.ico">
+<link rel="stylesheet" href="jquery-jcflick.css" media="all" type="text/css">
+
+<title>funnythingz</title>
+
+<script type="text/javascript" src="jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="jquery-jcflick.js"></script>
+<script type="text/javascript">
+$(function(){
+	$('#fuck').jcflick({
+		//init
+		flickContainer: 'flickContainer',
+		flickWrapper: 'flickWrapper',
+		flickCol: 'flickCol',
+		
+		//conf
+		flickCur: 0,
+		autoChange: true,
+		autoTimer: 5000,
+		fullHeight: true
+	});
+});
+</script>
+<style type="text/css">
+* {
+	margin: 0;
+	padding: 0;
+}
+img {
+	border: 0 none;
+	vertical-align: bottom;
+}
+table {
+	border-collapse: collapse;
+	border: 0 none;
+}
+table tr td {
+	text-align: center;
+	vertical-align: middle;
+}
+#funnythingz    td {background: url(images/bg_funnythingz.png) no-repeat right center;}
+#hiropocouk     td {background: url(images/bg_hiropocouk.png) no-repeat left center;}
+#mediaqueries   td {background: url(images/bg_mediaqueries.png) no-repeat right center;}
+#makingmachinez td {background: url(images/bg_makingmachinez.png) no-repeat right bottom;}
+#hackleberryme  td {background: url(images/bg_hackleberryme.png) no-repeat left bottom;}
+
+.section {
+	background: url(images/bg_left.png) no-repeat left center;
+}
+#fuck {
+	background: url(images/bg_right.png) no-repeat right center;
+}
+
+</style>
+</head>
+<body>
+
+<div class="section">
+	<div id="fuck">
+		<!-- flick -->
+		<div class="flickContainer"><div class="flickWrapper">
+			<table class="flickCol" id="funnythingz">
+				<tr><td><img src="images/title_funnythingz.png" alt="funnythingz"></td></tr>
+			</table>
+			<table class="flickCol" id="hiropocouk">
+				<tr><td><a href="http://hiropo.co.uk/" target="_blank"><img src="images/title_hiropocouk.png" alt="ひろぽっぽれす"></a></td></tr>
+			</table>
+			<table class="flickCol" id="mediaqueries">
+				<tr><td><a href="http://tpl.funnythingz.com/" target="_blank"><img src="images/title_mediaqueries.png" alt="MediaQueries Multi-Device Template."></a></td></tr>
+			</table>
+			<table class="flickCol" id="makingmachinez">
+				<tr><td><a href="http://www.makingmachinez.com/" target="_blank"><img src="images/title_makingmachinez.png" alt="http://www.makingmachinez.com/"></a></td></tr>
+			</table>
+			<table class="flickCol" id="hackleberryme">
+				<tr><td><a href="http://hackleberry.me/" target="_blank"><img src="images/title_hackleberryme.png" alt="hackleberry.me"></a></td></tr>
+			</table>
+		</div></div>
+	</div>
+</div><!-- /.section -->
+	
+<!-- Google Analytics -->
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-1882060-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+<!-- /Google Analytics -->
+</body>
+</html>
