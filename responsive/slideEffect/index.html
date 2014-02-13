@@ -1,0 +1,117 @@
+<!Doctype html>
+<html lang="ja">
+<head>
+
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="chrome=1">
+
+<title>jQuery.slideEffect</title>
+
+<meta name="description" content="iPhone, Android, iPad, Android3 タブレットなどのスマートフォン端末で、コンテンツをスライドショーのように多彩なエフェクトで切り替えるjQueryプラグインです。">
+<meta name="keywords" content="ワンソースマルチデバイス,メディアクエリ,メディアクエリー,mediaquery,MediaQueries,MediaQuery,slideEffect,スマフォサイト,フリック,flick,iPhone,Android,HTML5,CSS3">
+
+<link rel="shortcut icon" href="/public/resources/common/images/favicon.ico">
+
+<script type="text/javascript" src="/public/resources/common/js/jquery-1.6.4.min.js"></script>
+<script type="text/javascript" src="/public/resources/common/js/global.js"></script>
+<script type="text/javascript" src="/public/resources/common/js/jquery-megaDropdown.js"></script>
+<script type="text/javascript">
+(function(){
+	//Viewportの指定
+	if( ProjectName.ua.iPhone || ProjectName.ua.Android || ProjectName.ua.WP7 ){
+		ProjectName.MOD.print_r( ProjectName.META.iOS() );
+
+	}
+})();
+$(function(){
+	if( !ProjectName.ua.iPhone ){
+	if( !ProjectName.ua.iPad ){
+	if( !ProjectName.ua.Android ){
+		$('#globalNavi').megaDropdown();
+	}}}
+	ProjectName.PARTS.scrollAnchor();
+});
+</script>
+<!--[if IE 6]>
+<script type="text/javascript" src="/public/resources/common/js/DD_belatedPNG_0.0.8a-min.js"></script>
+<script type="text/javascript">
+	DD_belatedPNG.fix('img');
+</script>
+<![endif]-->
+
+<link rel="stylesheet" href="/public/resources/common/css/import_basic.css" media="all" type="text/css">
+<link rel="stylesheet" href="/public/resources/common/css/import_print.css" media="print" type="text/css">
+<link rel="stylesheet" href="/public/resources/common/css/jquery-megaDropdown.css" media="all" type="text/css">
+
+<!--#include virtual="/public/resources/common/inc/ga.html" -->
+</head>
+<body onLoad="ProjectName.PARTS.hideAdBar()" onOrientationChange="ProjectName.PARTS.hideAdBar()">
+
+<div id="globalContainer"><div id="globalContentsWrapper">
+	<h1 class="level1">jQuery.slideEffect</h1>
+	
+	<div id="globalHeader" class="group">
+		<div class="browser fFloL"><img src="/public/resources/common/images/browser.png" alt=""></div>
+		<p class="fFloR sTaC">ver 0.0.1<br>Last Update 2011/09/26</p>
+	</div>
+	<!--#include virtual="/public/resources/common/inc/sns.html" -->
+	<!--#include virtual="/public/resources/common/inc/megadropdown.html" -->
+	
+	<div class="section">
+		
+		<h2 class="level2">INDEX</h2>
+		<p>iPhone, Android, iPad, Android3 タブレットなどのスマートフォン端末で、<em>コンテンツをスライドショーのように多彩なエフェクトで切り替えるjQueryプラグイン</em>です。</p>
+		
+		<h3 class="level3">動作検証端末</h3>
+		<div class="group">
+			<dl class="defDlList fFloL fPane4">
+				<dt>Windows Mac</dt>
+				<dd>Internet Explorer 7 以上</dd>
+				<dd>Firefox3.6 以上</dd>
+				<dd>Safari5 以上</dd>
+				<dd>Opera11 以上</dd>
+				<dd>Google Chrome</dd>
+			</dl>
+			<dl class="defDlList fFloL fPane4">
+				<dt>iOS4.3 以上</dt>
+				<dd>iPhone3GS</dd>
+				<dd>iPhone4</dd>
+				<dd>iPad</dd>
+				<dd>iPad2</dd>
+			</dl>
+			<dl class="defDlList fFloL fPane4">
+				<dt>Android2.1 以上</dt>
+				<dd>Xperia (Android2.1)</dd>
+				<dd>GalaxyS (Android2.2)</dd>
+				<dd>NexusS (Android2.3)</dd>
+			</dl>
+		</div>
+		<ul class="attList">
+			<li>※端末によっては動作が重いものもあります。</li>
+			<li>※IE6は一応見れます。</li>
+			<li>※メディアクエリには向いていません。</li>
+		</ul>
+		
+		<h3 class="level3">更新履歴</h3>
+		<dl class="defDlList">
+			<dt>2011/09/26</dt>
+			<dd>ver 0.0.1 をリリースしました。</dd>
+		</dl>
+		<ul class="indentList">
+			<li class="fsXL"><a href="/js/slideEffect/reference.html">＞ Reference</a></li>
+			<li class="fsXL"><a href="/js/slideEffect/archive/jquery_slideEffect_0_0_1/demo.html">＞ Demo Page</a></li>
+			<li class="fsXL"><a href="https://github.com/funnythingz/slideEffect" target="_blank">＞ Download</a></li>
+		</ul>
+		
+	</div><!-- /.section -->
+		
+</div><!-- /#globalContentsWrapper --></div><!-- /#globalContainer -->
+
+
+<div id="globalFooterContainer"><div id="footerInner">
+	<!--#include virtual="/public/resources/common/inc/footer_link.html" -->
+</div><!-- /#footerInner --></div><!-- /#globalFooterContainer -->
+
+
+</body>
+</html>
