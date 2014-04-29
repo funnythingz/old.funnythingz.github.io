@@ -44,19 +44,18 @@ google_ad_height = 15;
         var feedControl = new google.feeds.FeedControl();
         feedControl.setLinkTarget(google.feeds.LINK_TARGET_BLANK);
         feedControl.setNumEntries(7);
-        feedControl.addFeed( 'http://blog.livedoor.jp/dqnplus/atom.xml', '痛いニュース' );
-        feedControl.addFeed( 'http://hamusoku.com/atom.xml', 'ハム速' );
-        feedControl.addFeed( 'http://lifehack2ch.livedoor.biz/atom.xml', 'lifehack2ch' );
-        feedControl.addFeed( 'http://onesoku.com/atom.xml', 'ONE PIECE速報' );
-        feedControl.addFeed( 'http://blog.livedoor.jp/itsoku/atom.xml', 'IT速報' );
-        feedControl.addFeed( 'http://repsoku.net/atom.xml', 'リプライ速報' );
-				feedControl.addFeed( 'http://oryouri.2chblog.jp/atom.xml', 'お料理速報' );
-				feedControl.addFeed( 'http://hijikisokuhou.doorblog.jp/atom.xml', 'ゆるりとひじき速報' );
-				feedControl.addFeed( 'http://blog.livedoor.jp/news23vip/index.rdf', 'VIPPERな俺' );
-        feedControl.addFeed( 'http://blog.livedoor.jp/himasoku123/atom.xml', '暇人＼(＾o＾)／速報' );
-        feedControl.addFeed( 'http://zch-vip.com/atom.xml', 'Zチャンネル' );
-				feedControl.addFeed( 'http://blog.livedoor.jp/rbkyn844/atom.xml', '暇つぶしニュース' );
-				feedControl.addFeed( 'http://manga-zip.net/feed', 'MANGA ZIP' );
+        feedControl.addFeed('http://blog.livedoor.jp/dqnplus/atom.xml', '痛いニュース');
+        feedControl.addFeed('http://hamusoku.com/atom.xml', 'ハム速');
+        feedControl.addFeed('http://lifehack2ch.livedoor.biz/atom.xml', 'lifehack2ch');
+        feedControl.addFeed('http://onesoku.com/atom.xml', 'ONE PIECE速報');
+        feedControl.addFeed('http://blog.livedoor.jp/itsoku/atom.xml', 'IT速報');
+        feedControl.addFeed('http://repsoku.net/atom.xml', 'リプライ速報');
+        feedControl.addFeed('http://oryouri.2chblog.jp/atom.xml', 'お料理速報');
+        feedControl.addFeed('http://hijikisokuhou.doorblog.jp/atom.xml', 'ゆるりとひじき速報');
+        feedControl.addFeed('http://blog.livedoor.jp/news23vip/index.rdf', 'VIPPERな俺');
+        feedControl.addFeed('http://blog.livedoor.jp/himasoku123/atom.xml', '暇人＼(＾o＾)／速報');
+        feedControl.addFeed('http://zch-vip.com/atom.xml', 'Zチャンネル');
+        feedControl.addFeed('http://blog.livedoor.jp/rbkyn844/atom.xml', '暇つぶしニュース');
         feedControl.draw(
         document.getElementById( 'feedControl' ), {
             drawMode : google.feeds.FeedControl.DRAW_MODE_TABBED
