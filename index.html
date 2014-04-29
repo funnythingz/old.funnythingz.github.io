@@ -1,21 +1,5 @@
-<!Doctype html>
-<html lang="ja">
-<head>
-
+<!Doctype html><html lang="ja"><head>
 <meta charset="utf-8">
-<!--
-┏━━━━━━┓′′′′′′′′′′′′′′′′′′′┏━━━┓┏━┓′′′′′┏━┓′┏━━━━━┓┏━┳━┓┏━━━━━━┓┏━┳━┓
-┃′′′′′′┃′′′′′′′′′′′′′′′′′′′┃′′′┃┃′┃┏━━━┓┃′┃┏┛′′′′′┃┃′┃′┃┃′′′′′′┃┃′┃′┃
-┗━━━━┓′┃′′′′′′′┏━━━━┓′′′′′′┗━━━┛┃′┃┃′′′┃┃′┃┃′┏━━┓′┃┃′┃′┃┗━━━┓′┏┛┃′┃′┃
-′′′′′┃′┃′′′′′′′┃′′′′┃′′′′′′┏━━━┓┃′┃┗━━━┛┃′┃┃′┃′′┃′┃┗━┻━┛′′′┏┛′┃′┗━┻━┛
-′′′′′┃′┃┏━━━━┓′┗━━━━┛′′′′┏┓┃′′′┃┃′┃′′′′′┃′┃┃′┃′′┃′┃′′′′′′′┏┛′┏┛′′′′′′
-′′′′′┃′┃┗┓┏┓′┃′′′′′′′′′┏━┛┃┗━━━┛┃′┃′′′′′┃′┃┗━┛′┏┛′┃′′′′′′┏┛′′┗┓′′′′′′
-′′′′┏┛′┃′┃┣┛┏┛′′′′′′′′┏┛′┏┛′′′′┏┛′┃′′′′┏┛′┃′′′′┃′┏┛′′′′′┏┛′┏┓′┗┓′′′′′
-′┏━━┛′┏┛′┃┣━┛′┏━━━━━━┓┗┫′┃′┏━━━┛′┏┛┏━━━┛′┏┛′′┏━┛′┃′′′′′′┃′┏┛┗┓′┃′′′′′
-′┃′′′┏┛′′┃┃′′′┃′′′′′′┃′┃′┃′┃′′′′┏┛′┃′′′′┏┛′′′┃′′┏┛′′′′′′┃′┃′′┃′┃′′′′′
-′┗━━━┛′′′┗┛′′′┗━━━━━━┛′┗━┛′┗━━━━┛′′┗━━━━┛′′′′┗━━┛′′′′′′′┗━┛′′┗━┛′′′′′
--->
-
 <meta name="description" content="fuckでクレイジーでトリッキーなwebエンジニアの集団、それがfunnythingz!!">
 <meta name="keywords" content="funnythingz,ひろぽっぽれす,makingmachinez,不要なブログ">
 
@@ -28,9 +12,9 @@
 
 <title>funnythingz</title>
 
-<script type="text/javascript" src="jquery-1.6.4.min.js"></script>
-<script type="text/javascript" src="jquery-jcflick.js"></script>
-<script type="text/javascript">
+<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+<script src="jquery-jcflick.js"></script>
+<script>
 $(function(){
 	$('#fuck').jcflick({
 		//init
@@ -82,7 +66,6 @@ table tr td {
 
 <div class="section">
 	<div id="fuck">
-		<!-- flick -->
 		<div class="flickContainer"><div class="flickWrapper">
 			<table class="flickCol" id="funnythingz">
 				<tr><td><img src="images/title_funnythingz.png" alt="funnythingz"></td></tr>
@@ -105,18 +88,16 @@ table tr td {
 	
 <!-- Google Analytics -->
 <script type="text/javascript">
+var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-1882060-3']);
+_gaq.push(['_trackPageview']);
 
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-1882060-3']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
+(function() {
+ var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+ ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+ var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+ })();
 </script>
 <!-- /Google Analytics -->
-</body>
-</html>
+
+</body></html>
