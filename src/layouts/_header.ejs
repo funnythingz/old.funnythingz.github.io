@@ -6,13 +6,17 @@
     <link rel="icon" type="image/png" href="<%= data.baseUrl %>images/icon.png" >
     <link href="<%= data.baseUrl %>styles/main.css" rel="stylesheet">
     <% if (locals.title) { %>
-    <title><%= locals.title %></title>
+    <title><%= locals.title %> - funnythingz</title>
     <% } else { %>
     <title>funnythingz</title>
     <% } %>
     <% if (locals.description) { %>
     <meta name="description" content="<%= locals.description %>">
-    <% locals.description = 'funnythingz,ひろぽっぽれす,makingmachinez,不要なブログ';} %>
+    <% locals.description = null; %>
+    <% } else { %>
+    <meta name="description" content="あたまゆるゆるおかしいれす">
+    <% } %>
+    <meta name="keywords" content="funnythingz,ひろぽっぽれす,hiropopless,makingmachinez,不要なブログ">
   </head>
   <body>
     <nav>
