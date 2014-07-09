@@ -39,6 +39,7 @@ module.exports = function (grunt) {
             'scripts/**',
             'styles/**.css',
             'styles/fonts/**',
+            'CNAME'
           ]
         }]
       }
