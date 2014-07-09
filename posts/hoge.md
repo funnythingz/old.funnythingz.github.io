@@ -1,6 +1,6 @@
 {
   title: "new Funnythingz",
-  date:  "2014-7-8",
+  date:  "2014-07-08",
   description: "リニューアルしますた！"
 }
 
