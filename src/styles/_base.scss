@@ -3,6 +3,8 @@ $green: hsl(151, 65%, 60%);
 $blue: hsl(216, 65%, 60%);
 $orange: hsl(6, 90%, 70%);
 $purple: hsl(260, 38%, 56%);
+$koolBlack: #012;
+$koolLightBlack: #abc;
 
 $offBlack: hsl(10, 1%, 22%);
 $grey: lighten($offBlack, 50);
@@ -11,9 +13,9 @@ $codeFont: Monaco, Consolas, monospace;
 $postFont: 'Merriweather', serif;
 $headerFont: 'Open Sans', sans-serif;
 
-$mainTheme: $blue;
-$baseTextColor: $offBlack;
-$lightTextColor: $grey;
+$mainTheme: $koolBlack;
+$baseTextColor: $koolBlack;
+$lightTextColor: $koolLightBlack;
 
 @mixin breakpoint($point) {
   @if $point == big-phone {
