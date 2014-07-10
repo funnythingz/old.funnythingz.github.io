@@ -1,0 +1,8 @@
+.tehepero {
+  color: #fff;
+  font-size: 2em;
+  text-align: center;
+
+  @media (max-width: 1250px) {display: none;}
+  @media (max-width: 630px)  {display: none;}
+}
