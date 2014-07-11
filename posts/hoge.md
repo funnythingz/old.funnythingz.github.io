@@ -1,10 +1,8 @@
 {
-  title: "new Funnythingz",
+  title: "funnythingz.comを作りなおした",
   date:  "2014-07-08",
   description: "リニューアルしますた！"
 }
-
-# funnythingz.comを作りなおした
 
 こんにちは！funnythingzです。
 

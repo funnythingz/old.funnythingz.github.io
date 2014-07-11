@@ -4,8 +4,6 @@
   description: "monokai大好きです"
 }
 
-# CabinJSのcode highlightにmonokaiをつくった
-
 まさかの連続エントリー。CabinJS楽しくなってきたのでいろいろいじってみる。
 
 とりあえずコード書いてみよう！と思い、highlightを試してみたところ、`solarized-dark` がデフォだった。というか`solarized-dark`しかない。`monokai`大好き派としては`monokai`を使いたい！
