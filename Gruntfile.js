@@ -94,11 +94,7 @@ module.exports = function (grunt) {
     'gh-pages': {
       options: {
         base: 'dist',
-        branch: 'master',
-        user: {
-            name: 'funnythingz',
-            email: 'hiroki@hackleberry.me'
-        }
+        branch: 'master'
       },
       src: ['**']
     }
