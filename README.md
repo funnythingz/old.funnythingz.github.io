@@ -1,1 +1,1 @@
-# [funnythingz.com](http://www.funnythingz.com/)
+[funnythingz.com](http://www.funnythingz.com/)
