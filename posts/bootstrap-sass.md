@@ -34,7 +34,7 @@ Gemfileができたら`bundle install`コマンドでインストールします
 `bundle install`を使えるようにするために`bundler`をインストールしましょう。
 
 ```
-% gem install bundler --no-rdoc --no-li
+% gem install bundler --no-rdoc --no-ri
 ```
 
 ## `bundle install`で`gem`をインストールする
