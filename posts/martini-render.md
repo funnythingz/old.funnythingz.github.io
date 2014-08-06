@@ -1,12 +1,12 @@
 {
-  title: "GolangのフレームワークのMartiniで簡単なDEMOをつくってみた",
+  title: "GoのフレームワークのMartiniで簡単なDEMOをつくってみた",
   date:  "2014-08-06",
   description: "GolangとMartini楽しいよ！"
 }
 
 こんにちは！funnythingzです。夏です暑いです。
 
-とある友人の紹介でGoが熱いという話を聞きましてそんなに興味なかったのですがGolangはじめてみました。
+とある友人の紹介でGoが熱いという話を聞きましてそんなに興味なかったのですがGoをはじめてみました。
 
 [Revel](http://revel.github.io/)ってのと[Martini](http://martini.codegangsta.io/)が良い感じらしいので両方試してようと思ったのですが、Martiniの方が推されていたのでMartiniを試してみることにしてみました。
 
@@ -22,13 +22,23 @@ MartiniはRubyの[Sinatra](http://www.sinatrarb.com/)みたいな感じらしい
 ### 材料
 
 - [Martini](http://martini.codegangsta.io/)
+- [martini-contrib/render](https://github.com/martini-contrib/render)
 - [Twitter Bootstrap3](http://getbootstrap.com/)
+
+### セットアップ
+
+`go get`コマンドで`martini`と`martini-contrib/render`をインストールします。
+
+```shell-session
+% go get github.com/go-martini/martini
+% go get github.com/martini-contrib/render
+```
 
 ### ディレクトリ構成
 
 シンプルに`layout`と`templates`というディレクトリ分けをします。
 
-```sh
+```shell-session
 ├── app.go ... ルーティングの処理をします
 ├── layout
 │   ├── index.go ... Indexをレンダリングします
@@ -250,7 +260,7 @@ func AboutRender(r render.Render) {
 
 ファイルが準備できたら動かしてみましょう！
 
-```go
+```shell-session
 % go run app.go
 ```
 
