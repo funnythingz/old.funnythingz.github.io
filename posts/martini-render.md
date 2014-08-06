@@ -25,15 +25,6 @@ MartiniはRubyの[Sinatra](http://www.sinatrarb.com/)みたいな感じらしい
 - [martini-contrib/render](https://github.com/martini-contrib/render)
 - [Twitter Bootstrap3](http://getbootstrap.com/)
 
-### セットアップ
-
-`go get`コマンドで`martini`と`martini-contrib/render`をインストールします。
-
-```shell-session
-% go get github.com/go-martini/martini
-% go get github.com/martini-contrib/render
-```
-
 ### ディレクトリ構成
 
 シンプルに`layout`と`templates`というディレクトリ分けをします。
@@ -47,6 +38,15 @@ MartiniはRubyの[Sinatra](http://www.sinatrarb.com/)みたいな感じらしい
     ├── layout.tmpl ... 全体レイアウトテンプレートです
     ├── index.tmpl  ... Indexのテンプレートです
     └── about.tmpl  ... Aboutのテンプレートです
+```
+
+### セットアップ
+
+`go get`コマンドで`martini`と`martini-contrib/render`をインストールします。
+
+```shell-session
+% go get github.com/go-martini/martini
+% go get github.com/martini-contrib/render
 ```
 
 ### ルーティング
