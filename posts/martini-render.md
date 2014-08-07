@@ -142,7 +142,7 @@ Bootstrap超便利！
 
   <footer>
     <div class="container">
-      <p class="text-center">&copy; funnythingz</p>
+      <p class="text-center">&copy; hogeyan</p>
     </div>
   </footer>
 
@@ -221,7 +221,7 @@ func AboutRender(r render.Render) {
     skill := []string{"TypeScript", "Sass/Compass", "Go"}
 
     profile := Profile{
-        "funnythingz",
+        "hogeyan",
         skill,
     }
 
