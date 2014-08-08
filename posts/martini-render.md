@@ -268,6 +268,26 @@ go runしたら`http://localhost:3000/`にアクセスしてみましょう。
 
 無事に動いていれば完成です！
 
+## `gin`でLiveReloadする
+
+[codegangsta/gin](https://github.com/codegangsta/gin)
+
+毎回`go run *.go`ってやるのもめんどくさいのと、自動更新されないのも辛いので、これらを解決してくれる`gin`を使うとめちゃくちゃ楽になります。早速使ってみましょう。
+
+### `gin` をインストールする。
+
+```shell-session
+% go get github.com/codegangsta/gin
+```
+
+### つかってみる
+
+`gin`コマンドを実行するだけです。簡単です！
+
+```shell-session
+% gin
+```
+
 > GitHubにもソースを置いておきました。
 
 [github.com/funnythingz/martini-demo/tree/master/render](https://github.com/funnythingz/martini-demo/tree/master/render)
