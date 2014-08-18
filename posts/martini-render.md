@@ -27,17 +27,14 @@ MartiniはRubyの[Sinatra](http://www.sinatrarb.com/)みたいな感じらしい
 
 ### ディレクトリ構成
 
-シンプルに`layout`と`templates`というディレクトリ分けをします。
-
 ```shell-session
-├── app.go ... ルーティングの処理をします
-├── layout
-│   ├── index.go ... Indexをレンダリングします
-│   └── about.go ... Aboutをレンダリングします
+├── app.go   ... ルーティングの処理をします
+├── index.go ... Indexをレンダリングします
+├── about.go ... Aboutをレンダリングします
 └── templates
-    ├── layout.tmpl ... 全体レイアウトテンプレートです
+    ├── about.tmpl  ... Aboutのテンプレートです
     ├── index.tmpl  ... Indexのテンプレートです
-    └── about.tmpl  ... Aboutのテンプレートです
+    └── layout.tmpl ... 全体レイアウトテンプレートです
 ```
 
 ### セットアップ
@@ -67,10 +64,9 @@ package main
 import(
     "github.com/go-martini/martini"
     "github.com/martini-contrib/render"
-    "./Layout"
 )
 
-func app() {
+func main() {
 
     m := martini.Classic()
 
@@ -85,14 +81,11 @@ func app() {
         r.Redirect("/")
     })
 
-    m.Get("/", layout.IndexRender)
-    m.Get("/about", layout.AboutRender)
+    m.Get("/", IndexRender)
+    m.Get("/about", AboutRender)
 
     m.Run()
-}
 
-func main() {
-    app()
 }
 ```
 
@@ -155,10 +148,10 @@ Bootstrap超便利！
 
 `IndexViewModel`というViewModelをつくってそれをIndexRenderに渡してレンダリングします。
 
-> layout/index.go
+> index.go
 
 ```go
-package layout
+package main
 
 import(
     "github.com/martini-contrib/render"
@@ -197,10 +190,10 @@ func IndexRender(r render.Render) {
 
 Indexページと同様に処理します。
 
-> layout/about.go
+> about.go
 
 ```go
-package layout
+package main
 
 import(
     "github.com/martini-contrib/render"
@@ -258,21 +251,9 @@ func AboutRender(r render.Render) {
 
 ## 動かしてみる
 
-ファイルが準備できたら動かしてみましょう！
-
-```shell-session
-% go run app.go
-```
-
-go runしたら`http://localhost:3000/`にアクセスしてみましょう。
-
-無事に動いていれば完成です！
-
-## `gin`でLiveReloadする
-
 [codegangsta/gin](https://github.com/codegangsta/gin)
 
-毎回`go run *.go`ってやるのもめんどくさいのと、自動更新されないのも辛いので、これらを解決してくれる`gin`を使うとめちゃくちゃ楽になります。早速使ってみましょう。
+`gin`を使って起動させることで、毎回`go run *.go`ってやる必要もなくなるのと自動更新してくれるのでめちゃくちゃ楽になります。早速使ってみましょう。
 
 ### `gin` をインストールする。
 
