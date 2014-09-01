@@ -57,7 +57,7 @@ Meteorで`*.ts`が使えるようになります。ちょっとクセがあり�
 
 こんな感じに`*.ts`の中でdefinitionsファイルを読み込みます。TypeScriptユーザーにはお馴染みですね。
 
-```
+```js
 ///<reference path="../definitions/lib.d.ts"/>
 ///<reference path="../definitions/meteor.d.ts"/>
 ///<reference path="../definitions/underscore.d.ts"/>
@@ -71,7 +71,7 @@ Meteorで`*.ts`が使えるようになります。ちょっとクセがあり�
 
 > JS
 
-```JS
+```js
 Template.hoge.helpers({...});
 Template.hoge.events({...});
 Template.hoge.ahya = function() {return 'ahya'}
@@ -79,7 +79,7 @@ Template.hoge.ahya = function() {return 'ahya'}
 
 > TS
 
-```JS
+```js
 Template['hoge'].helpers({...});
 Template['hoge'].events({...});
 Template['hoge']['ahya'] = function() {return 'ahya'}
@@ -91,13 +91,13 @@ Meteor.Collectionも`interface`を書かなきゃいけないです。
 
 > JS
 
-```
+```js
 UsersCollection = new Meteor.Collection("users");
 ```
 
 > TS
 
-```JS
+```js
 interface IUsersCollection {
     _id?: string;
     name: string;
