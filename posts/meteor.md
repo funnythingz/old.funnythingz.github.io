@@ -1,5 +1,5 @@
 {
-  title: "Meteorでスケジュール調整サービスつくってみた",
+  title: "Meteorで簡単なWebサービスつくってみた",
   date:  "2014-09-01",
   description: "Meteor"
 }
