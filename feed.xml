@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>Blog Name</title>
-  <subtitle>Blog subtitle</subtitle>
-  <id>http://blog.url.com/</id>
-  <link href="http://blog.url.com/"/>
-  <link href="http://blog.url.com/feed.xml" rel="self"/>
+  <title>funnythingz</title>
+  <subtitle>てきとうなblogです</subtitle>
+  <id>http://www.funnythingz.com</id>
+  <link href="http://www.funnythingz.com"/>
+  <link href="http://www.funnythingz.com/feed.xml" rel="self"/>
   <updated>2015-04-14T22:22:00+09:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
   <entry>
     <title>blogつくりはじめた</title>
-    <link rel="alternate" href="http://blog.url.com/2015/04/14/make-blog.html"/>
-    <id>http://blog.url.com/2015/04/14/make-blog.html</id>
+    <link rel="alternate" href="http://www.funnythingz.com/2015/04/14/make-blog.html"/>
+    <id>http://www.funnythingz.com/2015/04/14/make-blog.html</id>
     <published>2015-04-14T22:22:00+09:00</published>
     <updated>2015-04-14T22:28:10+09:00</updated>
     <author>
@@ -29,8 +29,8 @@
   </entry>
   <entry>
     <title>hello</title>
-    <link rel="alternate" href="http://blog.url.com/2015/04/13/hello.html"/>
-    <id>http://blog.url.com/2015/04/13/hello.html</id>
+    <link rel="alternate" href="http://www.funnythingz.com/2015/04/13/hello.html"/>
+    <id>http://www.funnythingz.com/2015/04/13/hello.html</id>
     <published>2015-04-13T22:57:00+09:00</published>
     <updated>2015-04-13T22:58:09+09:00</updated>
     <author>
