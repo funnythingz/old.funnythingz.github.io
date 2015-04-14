@@ -1,0 +1,38 @@
+@import "compass/css3";
+
+.header {
+  text-align: center;
+  .logo {
+    font-family: 'Schoolbell', cursive;
+    color: #345;
+  }
+}
+
+.entry {
+  > h1 {
+    font-size: 24px;
+  }
+
+  .meta {
+    margin-left: .5em;
+    color: #789;
+    font-size: 18px;
+  }
+}
+
+.aside {
+  h1 {
+    font-size: 24px;
+  }
+}
+
+.recent-list {
+  li {
+    line-height: 1.5;
+
+    > .meta {
+      margin-left: .5em;
+      color: #789;
+    }
+  }
+}

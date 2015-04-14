@@ -19,30 +19,42 @@ html
       meta[property="og:url" content="http://www.funnythingz.com"]
 
     link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css"
+    link[href="/css/styles.css" rel="stylesheet" type="text/css"]
+    link href='http://fonts.googleapis.com/css?family=Butterfly+Kids|Schoolbell' rel='stylesheet' type='text/css'
     script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/js/materialize.min.js"
                    
   body
+    header.header
+      .container
+        h1.logo
+          | funnythingz
+        p.description
+          | てきとうなblogです
     #main[role="main"]
       = yield
-    aside
+    aside.aside
       .container
-        h2
-          | Recent Articles
-        ol
-          - blog.articles[0...10].each do |article|
-            li
-              = link_to article.title, article
-              span
-                = article.date.strftime('%b %e')
-        h2
-          | Tags
-        ol
-          - blog.tags.each do |tag, articles|
-            li
-              = link_to "#{tag} (#{articles.size})", tag_path(tag)
-        h2
-          | By Year
-        ol
-          - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
-            li
-              = link_to "#{year} (#{articles.size})", blog_year_path(year)
+        .row
+          section.col.s4
+            h1
+              | Recent Articles
+            ol.recent-list
+              - blog.articles[0...10].each do |article|
+                li
+                  = link_to article.title, article
+                  span.meta
+                    = article.date.strftime('%b %e')
+          section.col.s4
+            h1
+              | Tags
+            ol
+              - blog.tags.each do |tag, articles|
+                li
+                  = link_to "#{tag} (#{articles.size})", tag_path(tag)
+          section.col.s4
+            h1
+              | By Year
+            ol
+              - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
+                li
+                  = link_to "#{year} (#{articles.size})", blog_year_path(year)
