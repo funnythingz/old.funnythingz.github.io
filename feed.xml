@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>Blog Name</title>
+  <subtitle>Blog subtitle</subtitle>
+  <id>http://blog.url.com/</id>
+  <link href="http://blog.url.com/"/>
+  <link href="http://blog.url.com/feed.xml" rel="self"/>
+  <updated>2015-04-14T22:22:00+09:00</updated>
+  <author>
+    <name>Blog Author</name>
+  </author>
+  <entry>
+    <title>blogつくりはじめた</title>
+    <link rel="alternate" href="http://blog.url.com/2015/04/14/make-blog.html"/>
+    <id>http://blog.url.com/2015/04/14/make-blog.html</id>
+    <published>2015-04-14T22:22:00+09:00</published>
+    <updated>2015-04-14T22:28:10+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;こんにちは、funnythingzです。 &lt;code&gt;funnythingz&lt;/code&gt; っていうblogをつくりはじめました。&lt;/p&gt;
+
+&lt;p&gt;だいたいそんなにblogを書きまくるタイプではないのですが、ゆにこさんっていうすごいデザイナーの人がmiddlemanで&lt;a href="http://yuni.co/"&gt;yunicode&lt;/a&gt;っていうステキなblogをつくったので負けじとつくってみることにしました。&lt;/p&gt;
+
+&lt;p&gt;テックブログ的なのは&lt;a href="http://hiropo.co.uk/"&gt;ひろぽっぽれす&lt;/a&gt;というblogをやっているのですが、テックブログってついつい面倒くさくなって書かなくなるので日常的にどうでもいいこととか書けて続くようなblogを始めてみようと思います。&lt;/p&gt;
+
+&lt;p&gt;とりあえずデザインつくるぞ！&lt;/p&gt;
+</content>
+  </entry>
+  <entry>
+    <title>hello</title>
+    <link rel="alternate" href="http://blog.url.com/2015/04/13/hello.html"/>
+    <id>http://blog.url.com/2015/04/13/hello.html</id>
+    <published>2015-04-13T22:57:00+09:00</published>
+    <updated>2015-04-13T22:58:09+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;Hello world.&lt;/p&gt;
+</content>
+  </entry>
+</feed>
