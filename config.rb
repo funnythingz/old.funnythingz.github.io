@@ -106,3 +106,18 @@ activate :deploy do |deploy|
   deploy.commit_message = "deploy - #{Time.new}"
   deploy.build_before = true
 end
+
+# Markdown
+set :markdown_engine, :redcarpet
+set :markdown, fenced_code_blocks: true, smartypants: true
+
+# Code highlighting
+activate :syntax
+
+# slim
+set :slim,  pretty: true, sort_attrs: false, format: :html5
+
+# minify
+configure :build do
+  activate :minify_html, remove_quotes: false, remove_intertag_spaces: true
+end

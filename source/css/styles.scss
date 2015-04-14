@@ -1,4 +1,13 @@
 @import "compass/css3";
+@import "monokai";
+
+code {
+  background-color: rgba(0,0,0,0.04);
+  @include border-radius(3px);
+  padding: 2px 4px;
+  font-size: 13px;
+  font-family: 'monaco';
+}
 
 .header {
   text-align: center;
