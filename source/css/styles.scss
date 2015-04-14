@@ -5,6 +5,9 @@
   .logo {
     font-family: 'Schoolbell', cursive;
     color: #345;
+    > a {
+      color: #345;
+    }
   }
 }
 

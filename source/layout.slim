@@ -27,11 +27,19 @@ html
     header.header
       .container
         h1.logo
-          | funnythingz
+          = link_to 'http://www.funnythingz.com'
+            | funnythingz
         p.description
           | てきとうなblogです
     #main[role="main"]
-      = yield
+      .container
+        article.entry
+          - unless current_article.nil?
+            h1
+              = current_article.title
+              span.meta
+                = current_article.date.strftime('%b %e')
+          = yield
     aside.aside
       .container
         .row
