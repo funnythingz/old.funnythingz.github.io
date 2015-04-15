@@ -1,6 +1,19 @@
 @import "compass/css3";
 @import "monokai";
 
+%_link_color {
+  color: rgba(0,0,0,0.87)
+}
+a {
+  @extend %_link_color;
+  &:link {
+    @extend %_link_color;
+  }
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
 code {
   background-color: rgba(0,0,0,0.04);
   @include border-radius(3px);
