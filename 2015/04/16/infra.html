@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=0, maximum-scale=10">
     <meta http-equiv="X-UA-Compatible" content="IE=edge;chrome=1">
-    <title>funnythingz - blogつくりはじめた</title><link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
+    <title>funnythingz - Androidアプリをつくる前にAPIのインフラ周りを考える</title><link rel="alternate" type="application/atom+xml" title="Atom Feed" href="/feed.xml" />
     <meta property="og:type" content="article">
     <meta property="og:description" content="てきとうなblogです">
     <meta property="og:site_name" content="funnythingz">
-    <meta property="og:title" content="blogつくりはじめた">
-    <meta property="og:url" content="http://www.funnythingz.com/2015/04/14/make-blog.html">
+    <meta property="og:title" content="Androidアプリをつくる前にAPIのインフラ周りを考える">
+    <meta property="og:url" content="http://www.funnythingz.com/2015/04/16/infra.html">
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.96.1/css/materialize.min.css">
     <link href="/css/styles-dd698ec1.css" rel="stylesheet" type="text/css">
@@ -31,17 +31,36 @@
       <div class="container">
         <article class="entry">
           <h1>
-            <i class="fa fa-paper-plane-o"></i> blogつくりはじめた<span class="meta">Apr 14</span>
-          </h1><p>こんにちは、funnythingzです。 <code>funnythingz</code> っていうblogをつくりはじめました。</p>
-
-<p></p>
-
-<p>だいたいそんなにblogを書きまくるタイプではないのですが、ゆにこさんっていうすごいデザイナーの人がmiddlemanで<a href="http://yuni.co/">yunicode</a>っていうステキなblogをつくったので負けじとつくってみることにしました。</p>
-
-<p>テックブログ的なのは<a href="http://hiropo.co.uk/">ひろぽっぽれす</a>というblogをやっているのですが、テックブログってついつい面倒くさくなって書かなくなるので日常的にどうでもいいこととか書けて続くようなblogを始めてみようと思います。</p>
-
-<p>とりあえずデザインつくるぞ！</p>
-
+            <i class="fa fa-paper-plane-o"></i> Androidアプリをつくる前にAPIのインフラ周りを考える<span class="meta">Apr 16</span>
+          </h1>
+          <p>突然のこんばんは、funnythingzです。夜です、ねむいです。</p>
+          
+          <p>Androidアプリをつくろうと思っているのですが、APIとかどうしようかと思っています。</p>
+          
+          <p></p>
+          
+          <p>APIつくったことなければAndroidアプリもつくったことがなく、インフラもよくわからないしわからないことだらけですが雰囲気でなんとかカバーしようと思っています。</p>
+          
+          <p>とりあえずこんな感じのを考えています。</p>
+          
+          <ul>
+          <li>今をときめくGo</li>
+          <li>今をときめくDocker</li>
+          <li>Goコンテナー</li>
+          <li>MySQLコンテナー</li>
+          </ul>
+          
+          <p>APIはこんな感じ。インフラのクラウドサービスはここらへんを使いたいなと。</p>
+          
+          <ul>
+          <li><a href="https://www.digitalocean.com/">DigitalOcean</a> &hellip; CoreOS/Docker</li>
+          <li><a href="https://www.tutum.co/">tutum</a> &hellip; Dockerイメージリポジトリとデプロイとか</li>
+          </ul>
+          
+          <p>とりあえずVagrantのCoreOSでGoコンテナーとMySQLコンテナーは雰囲気で動いたので、次はコンテナー上のGoアプリからMySQLコンテナーへ接続してみて良さ気だったら開発で本気出し始めるフェーズに入れるかなと。</p>
+          
+          <p>がんばるぞ！</p>
+          
         </article>
       </div>
     </div>
