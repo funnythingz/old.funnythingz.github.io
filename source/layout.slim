@@ -42,29 +42,37 @@ html
               span.meta
                 = current_article.date.strftime('%b %e')
           = yield
-    aside.aside
+    footer.page-footer.indigo.lighten-5
       .container
         .row
-          section.col.s4
+          section.col.l4.s12
             h1
-              | Recent Articles
+              i.fa.fa-newspaper-o
+              |  Recent Articles
             ol.recent-list
               - blog.articles[0...10].each do |article|
                 li
                   = link_to article.title, article
                   span.meta
                     = article.date.strftime('%b %e')
-          section.col.s4
+          section.col.l4.s12
             h1
-              | Tags
+              i.fa.fa-rocket
+              |  Tags
             ol
               - blog.tags.each do |tag, articles|
                 li
                   = link_to "#{tag} (#{articles.size})", tag_path(tag)
-          section.col.s4
+          section.col.l4.s12
             h1
-              | By Year
+              i.fa.fa-calendar-o
+              |  By Year
             ol
               - blog.articles.group_by {|a| a.date.year }.each do |year, articles|
                 li
                   = link_to "#{year} (#{articles.size})", blog_year_path(year)
+      .footer-copyright
+        .container
+          p.center-align.copyright.blue-grey-text.text-darken-4
+            strong
+              | &copy; funnythingz

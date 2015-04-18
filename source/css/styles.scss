@@ -45,9 +45,10 @@ code {
   }
 }
 
-.aside {
+.page-footer {
   h1 {
     font-size: 24px;
+    margin: 0;
   }
 }
 
@@ -60,4 +61,8 @@ code {
       color: #789;
     }
   }
+}
+
+.copyright {
+  margin: 0;
 }
