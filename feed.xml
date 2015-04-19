@@ -5,10 +5,28 @@
   <id>http://www.funnythingz.com</id>
   <link href="http://www.funnythingz.com"/>
   <link href="http://www.funnythingz.com/feed.xml" rel="self"/>
-  <updated>2015-04-16T00:46:00+09:00</updated>
+  <updated>2015-04-19T15:00:00+09:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Footer style</title>
+    <link rel="alternate" href="http://www.funnythingz.com/2015/04/19/footer-style.html"/>
+    <id>http://www.funnythingz.com/2015/04/19/footer-style.html</id>
+    <published>2015-04-19T15:00:00+09:00</published>
+    <updated>2015-04-19T15:03:50+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;こんぬつは、funnythingzです。3日連続でblogを書いてから日が開いてしまいました。これを3日坊主というらしいです。そうです、まさに3日坊主です。なかなか続ける大変だね！&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;blogは書いていませんでしたが、実はこっそりFooterのStyleを変更していました。ちょっと薄い紫色とアイコンを足してみました。&lt;/p&gt;
+
+&lt;p&gt;そんな感じです。明日から本気だすぞ！&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Androidアプリをつくる前にAPIのインフラ周りを考える</title>
     <link rel="alternate" href="http://www.funnythingz.com/2015/04/16/infra.html"/>
