@@ -5,16 +5,39 @@
   <id>http://www.funnythingz.com</id>
   <link href="http://www.funnythingz.com"/>
   <link href="http://www.funnythingz.com/feed.xml" rel="self"/>
-  <updated>2015-04-19T15:00:00+09:00</updated>
+  <updated>2015-04-22T23:46:00+09:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Androidアプリの開発をはじめました</title>
+    <link rel="alternate" href="http://www.funnythingz.com/2015/04/22/android.html"/>
+    <id>http://www.funnythingz.com/2015/04/22/android.html</id>
+    <published>2015-04-22T23:46:00+09:00</published>
+    <updated>2015-04-22T23:54:49+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;こんばんは、funnythingzです。何日か更新が止まりました。まさに3日坊主のはじまりです。&lt;/p&gt;
+
+&lt;p&gt;今までWeb系の開発しかしたことなかったのですが、Androidアプリの開発に手を出し始めてみました。とは言ってもまだXMLでレイアウトを書き始めたばかりなのでJavaコードはさわっていません。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;もともとはWebのフロントエンドのエンジニアだったのでマークアップは得意なのですが、AndroidのレイアウトやViewは完全に初めてなのですべてゼロから勉強です。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="http://plog.link/"&gt;plog&lt;/a&gt;というGoで開発した匿名ダイアリー的なものがあるのですが、これをAndroidアプリ化しようとしています。
+グリッドで良い感じに配置したいのでGridViewを使えば良いというところまでは教えてもらったので、良い感じになるように頑張ろうと思います。&lt;/p&gt;
+
+&lt;p&gt;単なるしょぼい決意表明でした。がんばるぞ！&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Footer style</title>
     <link rel="alternate" href="http://www.funnythingz.com/2015/04/19/footer-style.html"/>
     <id>http://www.funnythingz.com/2015/04/19/footer-style.html</id>
     <published>2015-04-19T15:00:00+09:00</published>
-    <updated>2015-04-19T15:03:50+09:00</updated>
+    <updated>2015-04-22T23:57:44+09:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -32,7 +55,7 @@
     <link rel="alternate" href="http://www.funnythingz.com/2015/04/16/infra.html"/>
     <id>http://www.funnythingz.com/2015/04/16/infra.html</id>
     <published>2015-04-16T00:46:00+09:00</published>
-    <updated>2015-04-16T00:57:35+09:00</updated>
+    <updated>2015-04-22T23:57:26+09:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -70,7 +93,7 @@
     <link rel="alternate" href="http://www.funnythingz.com/2015/04/15/design.html"/>
     <id>http://www.funnythingz.com/2015/04/15/design.html</id>
     <published>2015-04-15T00:34:00+09:00</published>
-    <updated>2015-04-16T00:57:07+09:00</updated>
+    <updated>2015-04-22T23:56:51+09:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -100,7 +123,7 @@
     <link rel="alternate" href="http://www.funnythingz.com/2015/04/14/make-blog.html"/>
     <id>http://www.funnythingz.com/2015/04/14/make-blog.html</id>
     <published>2015-04-14T22:22:00+09:00</published>
-    <updated>2015-04-16T00:57:07+09:00</updated>
+    <updated>2015-04-22T23:56:33+09:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -120,7 +143,7 @@
     <link rel="alternate" href="http://www.funnythingz.com/2015/04/13/hello.html"/>
     <id>http://www.funnythingz.com/2015/04/13/hello.html</id>
     <published>2015-04-13T22:57:00+09:00</published>
-    <updated>2015-04-13T22:58:09+09:00</updated>
+    <updated>2015-04-22T23:56:05+09:00</updated>
     <author>
       <name>Article Author</name>
     </author>
