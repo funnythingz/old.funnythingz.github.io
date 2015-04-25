@@ -64,12 +64,14 @@ code {
   }
 }
 
-.page-footer {
-  margin-top: 40px;
+footer {
+  &.page-footer {
+    margin-top: 40px;
 
-  h1 {
-    font-size: 24px;
-    margin: 0;
+    h1 {
+      font-size: 24px;
+      margin: 0;
+    }
   }
 }
 
