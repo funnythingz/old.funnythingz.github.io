@@ -4,13 +4,16 @@
 %_link_color {
   color: rgba(0,0,0,0.87)
 }
-a {
-  @extend %_link_color;
-  &:link {
+
+%_link {
+  a {
     @extend %_link_color;
-  }
-  &:hover {
-    text-decoration: underline;
+    &:link {
+      @extend %_link_color;
+    }
+    &:hover {
+      text-decoration: underline;
+    }
   }
 }
 
@@ -36,17 +39,20 @@ code {
 .entry {
   > h1 {
     font-size: 24px;
+    @extend %_link;
   }
 
   > h2 {
     font-size: 18px;
     background-color: #f7f8f9;
     padding: 0 .7em;
+    @extend %_link;
   }
 
   > h3 {
     font-size: 16px;
     font-weight: bold;
+    @extend %_link;
   }
 
   > ul {
@@ -65,6 +71,7 @@ code {
 }
 
 footer {
+  @extend %_link;
   &.page-footer {
     margin-top: 40px;
 
