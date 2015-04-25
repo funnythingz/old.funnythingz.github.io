@@ -34,8 +34,6 @@ code {
 }
 
 .entry {
-  margin: 0 0 2em;
-
   > h1 {
     font-size: 24px;
   }
@@ -67,6 +65,8 @@ code {
 }
 
 .page-footer {
+  margin-top: 40px;
+
   h1 {
     font-size: 24px;
     margin: 0;
