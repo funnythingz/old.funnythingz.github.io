@@ -38,6 +38,25 @@ code {
     font-size: 24px;
   }
 
+  > h2 {
+    font-size: 18px;
+    background-color: #f7f8f9;
+    padding: 0 .7em;
+  }
+
+  > h3 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  > ul {
+    margin-left: 1em;
+    li {
+      margin-left: 1em;
+      list-style-type: initial;
+    }
+  }
+
   .meta {
     margin-left: .5em;
     color: #789;
@@ -65,4 +84,13 @@ code {
 
 .copyright {
   margin: 0;
+}
+
+.external-link {
+  text-align: right;
+  li {
+    list-style: none;
+    @include inline-block;
+    vertical-align: top;
+  }
 }
