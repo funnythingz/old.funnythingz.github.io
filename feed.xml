@@ -5,10 +5,156 @@
   <id>http://www.funnythingz.com</id>
   <link href="http://www.funnythingz.com"/>
   <link href="http://www.funnythingz.com/feed.xml" rel="self"/>
-  <updated>2015-04-22T23:46:00+09:00</updated>
+  <updated>2015-04-25T20:40:00+09:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>Goでの個人開発における本番環境</title>
+    <link rel="alternate" href="http://www.funnythingz.com/2015/04/25/plog-production.html"/>
+    <id>http://www.funnythingz.com/2015/04/25/plog-production.html</id>
+    <published>2015-04-25T20:40:00+09:00</published>
+    <updated>2015-04-25T21:58:54+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;こんにちは、funnythingzです。Webサービスやスマホアプリの開発とかやってます。&lt;/p&gt;
+
+&lt;p&gt;Goで開発した&lt;a href="http://plog.link"&gt;plog&lt;/a&gt;という匿名ダイアリー的なWebサービスがあるのですが、本番環境をいろいろ変えまくったのでメモがてら残しておきます。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2&gt;さくらVPS&lt;/h2&gt;
+
+&lt;p&gt;まず最初のリリース時がこの環境です。&lt;/p&gt;
+
+&lt;p&gt;さくらVPSのVPS512プランを契約してGoアプリをFastCGIとしてSupervisorでDaemon化してNginx経由で動かすという構成でした。
+GoでつくったWebサービスだとこの構成が一番ポピュラーっぽいです。すべてさくらVPS内でもっていました。&lt;/p&gt;
+
+&lt;p&gt;データベースとか含むとこんな感じの構成です。&lt;/p&gt;
+
+&lt;h3&gt;OS&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;CentOS&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;環境構築&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Chefと手動&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Webサーバー&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Nginx&lt;/li&gt;
+&lt;li&gt;FastCGI化したGoアプリ&lt;/li&gt;
+&lt;li&gt;Supervisor&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;DB&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;MySQL&lt;/li&gt;
+&lt;li&gt;Redis&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;所感&lt;/h3&gt;
+
+&lt;p&gt;ベタな構成なのですが、すべてがVPS上においてあってサーバー構築も時間かかるしセキュリティ面も自分で考えなきゃだし結構いろいろ面倒くさい。&lt;/p&gt;
+
+&lt;p&gt;サーバー構成も忘れやすいし、もしぶっ壊れた場合は復旧が絶対つらいというのが想像できます。運用コスト高いです。&lt;/p&gt;
+
+&lt;h2&gt;DigitalOcean&lt;/h2&gt;
+
+&lt;p&gt;会社でDockerを覚えたのでDocker使うとモテるんじゃないかという下心からとりあえずDocker化してみたいと思いやってみることにしました。
+あと&lt;a href="https://twitter.com/akiyan"&gt;あきやん&lt;/a&gt;さんに&lt;a href="https://www.digitalocean.com/?refcode=f40307411b2b"&gt;DigitalOcean&lt;/a&gt;が良いというのをきいたので招待してもらって移行してみました。&lt;/p&gt;
+
+&lt;p&gt;Dockerを使うにあたっては、&lt;a href="https://www.tutum.co/"&gt;tutum.co&lt;/a&gt;ってのがありましてDocker Platformな感じのサービスで、DigitalOceanに良い感じに環境を構築してデプロイまでやってくれるというステキサービスがあるのでtutum.coを使いました。&lt;/p&gt;
+
+&lt;h3&gt;OS&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Ubuntu&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;環境構築&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Docker&lt;/li&gt;
+&lt;li&gt;tutum.co&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Webサーバー&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;GoのGoji(コンテナー)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;DB&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;MySQL(コンテナー)&lt;/li&gt;
+&lt;li&gt;Redis(コンテナー)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;所感&lt;/h3&gt;
+
+&lt;p&gt;tutum.coがDockerHubみたいになっていてDockerイメージをprivateで管理することができます。ただしDockerを使うためのOSがデフォルトがUbuntuという謎構成だったのがつらいのと、とりあえず動食っちゃ動くのですが、MySQLコンテナーはデータの永続化させようとすると色々面倒くさいのでMySQLをコンテナーにするのはよくないなぁと思いました。&lt;/p&gt;
+
+&lt;p&gt;すべてをDockerのコンテナーとして動かすというのは成功しましたが実際の本番運用はつらいです。&lt;/p&gt;
+
+&lt;p&gt;ちなみにGoアプリをDockerにのっけるやりかたはこちらのスライドをどうぞ&lt;/p&gt;
+
+&lt;script async class="speakerdeck-embed" data-id="d598024a1bda473eb8fcc563ee644d65" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt;
+
+&lt;h2&gt;DigitalOcean + Google Cloud SQL&lt;/h2&gt;
+
+&lt;p&gt;MySQLはやはり外部にもった方がいろいろ扱いやすいなと思い、AWSのRDSは高いしクラウド破産しかねないので&lt;a href="https://cloud.google.com/products/?hl=ja"&gt;Google Cloud Platform&lt;/a&gt;のサービス、&lt;a href="https://cloud.google.com/sql/?hl=ja"&gt;Cloud SQL&lt;/a&gt;を使うことにしました。&lt;/p&gt;
+
+&lt;p&gt;やっぱりMySQLとかデータ系はそれ専用のサービス使うのが一番良いなって思います。&lt;/p&gt;
+
+&lt;p&gt;そして、 Docker on Ubuntuをやめて、基本のDocker on CoreOSにしました。&lt;/p&gt;
+
+&lt;h3&gt;OS&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;CoreOS&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;環境構築&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Docker&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;Webサーバー&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;GoのGoji(コンテナー)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;DB&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;MySQL(Google Cloud SQL)&lt;/li&gt;
+&lt;li&gt;Redis(コンテナー)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3&gt;所感&lt;/h3&gt;
+
+&lt;p&gt;これでやっと安心して運用できるかなと思いました。スケールアウトはできないですが、そこまでアクティブなサービスではないので妥協しています。&lt;/p&gt;
+
+&lt;h2&gt;まとめ&lt;/h2&gt;
+
+&lt;p&gt;こんな感じでGoで個人開発したものを安く公開できる環境は整ってきていると思うので、Go人口が増えたら良いなぁと思ってます。&lt;/p&gt;
+
+&lt;p&gt;ちなみに&lt;a href="https://www.digitalocean.com/?refcode=f40307411b2b"&gt;こちらからDigitalOceanに登録&lt;/a&gt;すると$10のクーポンがもらえちゃうよ！&lt;/p&gt;
+
+&lt;p&gt;Go、楽しいよ、Go!!&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>Androidアプリの開発をはじめました</title>
     <link rel="alternate" href="http://www.funnythingz.com/2015/04/22/android.html"/>
@@ -136,18 +282,6 @@
 &lt;p&gt;テックブログ的なのは&lt;a href="http://hiropo.co.uk/"&gt;ひろぽっぽれす&lt;/a&gt;というblogをやっているのですが、テックブログってついつい面倒くさくなって書かなくなるので日常的にどうでもいいこととか書けて続くようなblogを始めてみようと思います。&lt;/p&gt;
 
 &lt;p&gt;とりあえずデザインつくるぞ！&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>hello</title>
-    <link rel="alternate" href="http://www.funnythingz.com/2015/04/13/hello.html"/>
-    <id>http://www.funnythingz.com/2015/04/13/hello.html</id>
-    <published>2015-04-13T22:57:00+09:00</published>
-    <updated>2015-04-22T23:56:05+09:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;Hello world.&lt;/p&gt;
 </content>
   </entry>
 </feed>
