@@ -14,7 +14,7 @@
     <link rel="alternate" href="http://www.funnythingz.com/2015/04/25/plog-production.html"/>
     <id>http://www.funnythingz.com/2015/04/25/plog-production.html</id>
     <published>2015-04-25T20:40:00+09:00</published>
-    <updated>2015-04-25T21:58:54+09:00</updated>
+    <updated>2015-04-26T18:19:41+09:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -101,7 +101,7 @@ GoでつくったWebサービスだとこの構成が一番ポピュラーっぽ
 
 &lt;h3&gt;所感&lt;/h3&gt;
 
-&lt;p&gt;tutum.coがDockerHubみたいになっていてDockerイメージをprivateで管理することができます。ただしDockerを使うためのOSがデフォルトがUbuntuという謎構成だったのがつらいのと、とりあえず動食っちゃ動くのですが、MySQLコンテナーはデータの永続化させようとすると色々面倒くさいのでMySQLをコンテナーにするのはよくないなぁと思いました。&lt;/p&gt;
+&lt;p&gt;tutum.coがDockerHubみたいになっていてDockerイメージをprivateで管理することができます。ただしDockerを使うためのOSがデフォルトがUbuntuという謎構成だったのがつらいのと、とりあえず動くっちゃ動くのですが、MySQLコンテナーはデータの永続化させようとすると色々面倒くさいのでMySQLをコンテナーにするのはよくないなぁと思いました。&lt;/p&gt;
 
 &lt;p&gt;すべてをDockerのコンテナーとして動かすというのは成功しましたが実際の本番運用はつらいです。&lt;/p&gt;
 
