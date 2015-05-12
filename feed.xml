@@ -5,16 +5,34 @@
   <id>http://www.funnythingz.com</id>
   <link href="http://www.funnythingz.com"/>
   <link href="http://www.funnythingz.com/feed.xml" rel="self"/>
-  <updated>2015-05-11T23:22:00+09:00</updated>
+  <updated>2015-05-12T23:59:00+09:00</updated>
   <author>
     <name>Blog Author</name>
   </author>
+  <entry>
+    <title>マッハGoGoGo打ちまくった</title>
+    <link rel="alternate" href="http://www.funnythingz.com/2015/05/12/mach.html"/>
+    <id>http://www.funnythingz.com/2015/05/12/mach.html</id>
+    <published>2015-05-12T23:59:00+09:00</published>
+    <updated>2015-05-13T00:20:27+09:00</updated>
+    <author>
+      <name>Article Author</name>
+    </author>
+    <content type="html">&lt;p&gt;メダル不要機をつけたのでとにかく打ちまくった。&lt;/p&gt;
+
+&lt;p&gt;ゴーゴータイム気持ちいー！いろんな演出が懐かしくてついつい動画を撮ってしまった。&lt;/p&gt;
+
+&lt;p&gt;目押しできてないのは許してください。&lt;/p&gt;
+
+&lt;iframe width="640" height="480" src="https://www.youtube.com/embed/SRu2tWu8OWs" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+</content>
+  </entry>
   <entry>
     <title>パチスロ マッハGoGoGo(4号機)を買ってしまった</title>
     <link rel="alternate" href="http://www.funnythingz.com/2015/05/11/speadracer.html"/>
     <id>http://www.funnythingz.com/2015/05/11/speadracer.html</id>
     <published>2015-05-11T23:22:00+09:00</published>
-    <updated>2015-05-11T23:31:44+09:00</updated>
+    <updated>2015-05-13T00:20:20+09:00</updated>
     <author>
       <name>Article Author</name>
     </author>
@@ -28,7 +46,7 @@
 
 &lt;p&gt;というわけでとりあえず回してみたので動画をはっておこう。&lt;/p&gt;
 
-&lt;iframe width="420" height="315" src="https://www.youtube.com/embed/HJP2HrkfDg8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
+&lt;iframe width="640" height="480" src="https://www.youtube.com/embed/HJP2HrkfDg8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 </content>
   </entry>
   <entry>
@@ -254,36 +272,6 @@ GoでつくったWebサービスだとこの構成が一番ポピュラーっぽ
 &lt;p&gt;とりあえずVagrantのCoreOSでGoコンテナーとMySQLコンテナーは雰囲気で動いたので、次はコンテナー上のGoアプリからMySQLコンテナーへ接続してみて良さ気だったら開発で本気出し始めるフェーズに入れるかなと。&lt;/p&gt;
 
 &lt;p&gt;がんばるぞ！&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>design</title>
-    <link rel="alternate" href="http://www.funnythingz.com/2015/04/15/design.html"/>
-    <id>http://www.funnythingz.com/2015/04/15/design.html</id>
-    <published>2015-04-15T00:34:00+09:00</published>
-    <updated>2015-04-22T23:56:51+09:00</updated>
-    <author>
-      <name>Article Author</name>
-    </author>
-    <content type="html">&lt;p&gt;こんばんは、funnythingzです。雑ですが一瞬でデザインできました。適度に満足です。&lt;/p&gt;
-
-&lt;p&gt;例えばこんな感じ。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;Goもhighlightされちゃう。&lt;/p&gt;
-&lt;pre class="highlight go"&gt;&lt;code&gt;&lt;span class="k"&gt;package&lt;/span&gt;&lt;span class="x"&gt; &lt;/span&gt;&lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="x"&gt;
-
-&lt;/span&gt;&lt;span class="k"&gt;import&lt;/span&gt;&lt;span class="x"&gt; &lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="x"&gt;
-        &lt;/span&gt;&lt;span class="s"&gt;"fmt"&lt;/span&gt;&lt;span class="x"&gt;
-&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="x"&gt;
-
-&lt;/span&gt;&lt;span class="k"&gt;func&lt;/span&gt;&lt;span class="x"&gt; &lt;/span&gt;&lt;span class="n"&gt;main&lt;/span&gt;&lt;span class="p"&gt;()&lt;/span&gt;&lt;span class="x"&gt; &lt;/span&gt;&lt;span class="p"&gt;{&lt;/span&gt;&lt;span class="x"&gt;
-        &lt;/span&gt;&lt;span class="n"&gt;fmt&lt;/span&gt;&lt;span class="o"&gt;.&lt;/span&gt;&lt;span class="n"&gt;Println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;"Hello world."&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt;&lt;span class="x"&gt;
-&lt;/span&gt;&lt;span class="p"&gt;}&lt;/span&gt;&lt;span class="x"&gt;
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;良い感じになった！&lt;/p&gt;
 </content>
   </entry>
 </feed>
