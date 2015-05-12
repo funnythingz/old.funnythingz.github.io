@@ -15,5 +15,4 @@ READMORE
 
 というわけでとりあえず回してみたので動画をはっておこう。
 
-<iframe width="420" height="315" src="https://www.youtube.com/embed/HJP2HrkfDg8" frameborder="0" allowfullscreen></iframe>
-
+<iframe width="640" height="480" src="https://www.youtube.com/embed/HJP2HrkfDg8" frameborder="0" allowfullscreen></iframe>
