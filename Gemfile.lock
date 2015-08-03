@@ -147,3 +147,6 @@ DEPENDENCIES
   middleman-slim
   middleman-syntax
   redcarpet
+
+BUNDLED WITH
+   1.10.3
