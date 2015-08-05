@@ -109,13 +109,13 @@ end
 
 # Markdown
 set :markdown_engine, :redcarpet
-set :markdown, fenced_code_blocks: true, smartypants: true
+set :markdown, fenced_code_blocks: true, smartypants: true, with_toc_data: true, tables: true, autolink: true, gh_blockcode: true
 
 # Code highlighting
 activate :syntax
 
 # slim
-set :slim, pretty: true, sort_attrs: false
+set :slim, pretty: true, sort_attrs: false, format: :html5 
 
 # minify
 configure :build do
