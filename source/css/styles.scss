@@ -101,6 +101,16 @@ footer {
   }
 }
 
+ul {
+  li {
+    margin-bottom: .5em;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
 .recent-list {
   li {
     line-height: 1.5;
