@@ -3,6 +3,7 @@ title: Footer style
 date: 2015-04-19 15:00 JST
 tags:
   - blog
+  - dialy
 ---
 
 こんぬつは、funnythingzです。3日連続でblogを書いてから日が開いてしまいました。これを3日坊主というらしいです。そうです、まさに3日坊主です。なかなか続ける大変だね！
