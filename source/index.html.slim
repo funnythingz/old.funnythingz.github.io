@@ -3,15 +3,6 @@ pageable: true
 per_page: 10
 ---
 
-- if paginate && num_pages > 1
-  p
-    | Page
-    = page_number
-    |  of
-    = num_pages
-  - if prev_page
-    p
-      = link_to 'Previous page', prev_page
 - page_articles.each_with_index do |article, i|
   article.entry
     h1
@@ -45,6 +36,15 @@ per_page: 10
       = link_to article
         i.fa.fa-arrow-circle-right
         |  READ MORE
+- if paginate && num_pages > 1
+  p
+    | Page
+    = page_number
+    |  of
+    = num_pages
+  - if prev_page
+    p
+      = link_to 'Previous page', prev_page
 - if paginate
   - if next_page
     p
