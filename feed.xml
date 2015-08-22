@@ -5,10 +5,105 @@
   <id>http://www.funnythingz.com</id>
   <link href="http://www.funnythingz.com"/>
   <link href="http://www.funnythingz.com/feed.xml" rel="self"/>
-  <updated>2015-08-08T15:36:00+09:00</updated>
+  <updated>2015-08-22T21:06:00+09:00</updated>
   <author>
     <name>funnythingz</name>
   </author>
+  <entry>
+    <title>10年以上運用しているブログをmiddleman化するまでのお話</title>
+    <link rel="alternate" href="http://www.funnythingz.com/2015/08/22/makingmachinez.html"/>
+    <id>http://www.funnythingz.com/2015/08/22/makingmachinez.html</id>
+    <published>2015-08-22T21:06:00+09:00</published>
+    <updated>2015-08-22T22:10:47+09:00</updated>
+    <author>
+      <name>funnythingz</name>
+    </author>
+    <content type="html">&lt;p&gt;こんにちは、funnythingzです。夏が終わりますね。海も山も特に行ってません。夏らしいことは何もしてないで引きこもっています。&lt;/p&gt;
+
+&lt;p&gt;個人で10年以上運用している（放置している）&lt;a href="http://www.makingmachinez.com/"&gt;原付改造カスタムブログ::makingmachinez&lt;/a&gt;という黒歴史満載の超ダサいブログがあるのですが、そのブログをmiddleman化したのでその経緯でも書いてみます。&lt;/p&gt;
+
+&lt;h2 id="そもそもブログじゃなかった"&gt;そもそもブログじゃなかった&lt;/h2&gt;
+
+&lt;p&gt;2003年に開設したのですが、そもそも最初はブログというよりはただのホームページでした。&lt;/p&gt;
+
+&lt;p&gt;というかブログというものが一般的ではなくまだウェブログって呼ばれていた時代でした。&lt;/p&gt;
+
+&lt;p&gt;で、最初は当時学生だった僕の3DCG作品をのっけたり適当なポエム書いたりするようなスペースでした。&lt;/p&gt;
+
+&lt;h2 id="サーバ構成や仕様など"&gt;サーバ構成や仕様など&lt;/h2&gt;
+
+&lt;p&gt;気づいたら12年くらい運用（放置）しているのでサーバ構成とか仕様とかなんかそういうの書いてみます。&lt;/p&gt;
+
+&lt;h3 id="リリース当時-2004-2006"&gt;リリース当時(2004 - 2006)&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;自宅サーバ (Redhat Linux 9)&lt;/li&gt;
+&lt;li&gt;HTML (テーブルコーディング)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;確かCSSが出てき始めたばっかりの頃だったと思います。で、&lt;code&gt;Redhat Linux 9でつくる最強自宅サーバ&lt;/code&gt; みたいな本を買ってきてどうせなら自宅サーバつくって独自ドメインで公開したらカッコイイんじゃね？みたいなノリでサーバつくってリリースしたような気がします。学校の友達にDOS攻撃されてソッコーでダウンしたのは良い思い出です。&lt;/p&gt;
+
+&lt;h3 id="web標準時代-2007-2008"&gt;Web標準時代 (2007 - 2008)&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;自宅サーバ (FedoreCore 3)&lt;/li&gt;
+&lt;li&gt;XHTML + CSS (Web標準)&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;確かサーバ壊れて2006年に一回閉鎖して、そのあとしばらく放置して今度はFedoraCore3で自宅サーバつくって復活させたような気がしています。この頃の記憶が定かじゃないです。&lt;/p&gt;
+
+&lt;p&gt;で、2007年にCSSを覚えたので確かCSSもつかってWeb標準化したような気がします。この頃から放置気味だったのであまり覚えていません。&lt;/p&gt;
+
+&lt;h3 id="movabletype-2009-2014"&gt;MovableType (2009 - 2014)&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;チカッパ -&amp;gt; ヘテムル -&amp;gt; さくらVPS&lt;/li&gt;
+&lt;li&gt;MovableType v4.2 - v5.x&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;すべての記事を手動でHTML書いていたのでブログらしくブログ化しようと思ってMovableTypeを導入したような気がします。&lt;/p&gt;
+
+&lt;p&gt;もともと2007年頃からWordpressを使っていたのですが、あえてMovableTypeにしてみようと思って導入したような気がします。&lt;/p&gt;
+
+&lt;p&gt;サーバーはころころ変わっていて、ペパボのチカッパ、ヘテムルを経てさくらVPSで運用していました。&lt;/p&gt;
+
+&lt;p&gt;PVは全盛期で20,000/Monthありました。&lt;/p&gt;
+
+&lt;h3 id="github-pages-2014-2015"&gt;GitHub Pages (2014 - 2015)&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;GitHub Pages&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;さくらVPSを解約するためにMovableTypeやめてどうしようかなーと思っていた時にGitHub Pagesで静的運用すれば良いんじゃないかと思い、MovableTypeで書きだしたHTMLをそのままリポジトリにあげてGitHub Pagesとして運用していました。&lt;/p&gt;
+
+&lt;p&gt;もはや完全に放置状態だったのであまりに運用が雑でひどすぎます。&lt;/p&gt;
+
+&lt;p&gt;それでもPVは10,000/Monthありました。だいぶゆるやかに減少傾向ですが…。&lt;/p&gt;
+
+&lt;h3 id="middleman-github-pages-2015"&gt;middleman + GitHub Pages (2015 - )&lt;/h3&gt;
+
+&lt;p&gt;このままでは改善も何もできないぞと思い、ようやく重い腰をあげてmiddleman化してみました。&lt;/p&gt;
+
+&lt;p&gt;このfunnythingzブログもmiddlemanで構築されているので個人的にmiddlemanが好きなのもあって頑張ってmiddleman化しました。&lt;/p&gt;
+
+&lt;p&gt;記事数が100記事くらいあるので静的なHTMLからどうやってmarkdownにしようかと、手動コピペも頑張ればいける量だったので手動でも良いかなとも思いましたが、そこはやはり変換スクリプトつくってやるべきだよなと思いrubyで変換スクリプト書きました。&lt;/p&gt;
+
+&lt;p&gt;記事構成が &lt;code&gt;/yyyy/mm/#{id}.html&lt;/code&gt; だったので、これを &lt;code&gt;yyyy-mm-dd-id.html.md&lt;/code&gt; に変換して記事の中身だけをスクレイピングするスクリプトを用意して変換しました。&lt;/p&gt;
+
+&lt;h2 id="所感"&gt;所感&lt;/h2&gt;
+
+&lt;p&gt;10年以上運用(放置)しているブログに手を入れるのはなかなか腰が重いですが、何とかmiddleman化できて満足しています。&lt;/p&gt;
+
+&lt;p&gt;デザインとかもがっつり変えちゃおうかなとも思ったのですが、それをやり始めると色々変えたくなって終わらないなと思ったのでまずはリファクタとしてmiddleman化しました。&lt;/p&gt;
+
+&lt;p&gt;ソーシャルボタンもいれてシェアもしやすくできたのが一番満足してるかもｗ&lt;/p&gt;
+
+&lt;p&gt;まぁそんなこんなでGitHub Pages上で運用すれば無料で運用し続けることができるのでまたさらに10年くらいは放置しても大丈夫かなｗ&lt;/p&gt;
+
+&lt;p&gt;そんな感じでゆるく運用していこうと思います。&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>冷やし酸辣湯麺をつくったのでレシピをメモっとく</title>
     <link rel="alternate" href="http://www.funnythingz.com/2015/08/08/cold-men.html"/>
@@ -232,152 +327,6 @@ service apache2 restart
 &lt;p&gt;というわけでとりあえず回してみたので動画をはっておこう。&lt;/p&gt;
 
 &lt;iframe width="640" height="480" src="https://www.youtube.com/embed/HJP2HrkfDg8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-</content>
-  </entry>
-  <entry>
-    <title>Goでの個人開発における本番環境</title>
-    <link rel="alternate" href="http://www.funnythingz.com/2015/04/25/plog-production.html"/>
-    <id>http://www.funnythingz.com/2015/04/25/plog-production.html</id>
-    <published>2015-04-25T20:40:00+09:00</published>
-    <updated>2015-04-26T18:19:41+09:00</updated>
-    <author>
-      <name>funnythingz</name>
-    </author>
-    <content type="html">&lt;p&gt;こんにちは、funnythingzです。Webサービスやスマホアプリの開発とかやってます。&lt;/p&gt;
-
-&lt;p&gt;Goで開発した&lt;a href="http://plog.link"&gt;plog&lt;/a&gt;という匿名ダイアリー的なWebサービスがあるのですが、本番環境をいろいろ変えまくったのでメモがてら残しておきます。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;h2 id="さくらvps"&gt;さくらVPS&lt;/h2&gt;
-
-&lt;p&gt;まず最初のリリース時がこの環境です。&lt;/p&gt;
-
-&lt;p&gt;さくらVPSのVPS512プランを契約してGoアプリをFastCGIとしてSupervisorでDaemon化してNginx経由で動かすという構成でした。
-GoでつくったWebサービスだとこの構成が一番ポピュラーっぽいです。すべてさくらVPS内でもっていました。&lt;/p&gt;
-
-&lt;p&gt;データベースとか含むとこんな感じの構成です。&lt;/p&gt;
-
-&lt;h3 id="os"&gt;OS&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;CentOS&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="環境構築"&gt;環境構築&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Chefと手動&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="webサーバー"&gt;Webサーバー&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Nginx&lt;/li&gt;
-&lt;li&gt;FastCGI化したGoアプリ&lt;/li&gt;
-&lt;li&gt;Supervisor&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="db"&gt;DB&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;MySQL&lt;/li&gt;
-&lt;li&gt;Redis&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="所感"&gt;所感&lt;/h3&gt;
-
-&lt;p&gt;ベタな構成なのですが、すべてがVPS上においてあってサーバー構築も時間かかるしセキュリティ面も自分で考えなきゃだし結構いろいろ面倒くさい。&lt;/p&gt;
-
-&lt;p&gt;サーバー構成も忘れやすいし、もしぶっ壊れた場合は復旧が絶対つらいというのが想像できます。運用コスト高いです。&lt;/p&gt;
-
-&lt;h2 id="digitalocean"&gt;DigitalOcean&lt;/h2&gt;
-
-&lt;p&gt;会社でDockerを覚えたのでDocker使うとモテるんじゃないかという下心からとりあえずDocker化してみたいと思いやってみることにしました。
-あと&lt;a href="https://twitter.com/akiyan"&gt;あきやん&lt;/a&gt;さんに&lt;a href="https://www.digitalocean.com/?refcode=f40307411b2b"&gt;DigitalOcean&lt;/a&gt;が良いというのをきいたので招待してもらって移行してみました。&lt;/p&gt;
-
-&lt;p&gt;Dockerを使うにあたっては、&lt;a href="https://www.tutum.co/"&gt;tutum.co&lt;/a&gt;ってのがありましてDocker Platformな感じのサービスで、DigitalOceanに良い感じに環境を構築してデプロイまでやってくれるというステキサービスがあるのでtutum.coを使いました。&lt;/p&gt;
-
-&lt;h3 id="os"&gt;OS&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Ubuntu&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="環境構築"&gt;環境構築&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Docker&lt;/li&gt;
-&lt;li&gt;tutum.co&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="webサーバー"&gt;Webサーバー&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;GoのGoji(コンテナー)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="db"&gt;DB&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;MySQL(コンテナー)&lt;/li&gt;
-&lt;li&gt;Redis(コンテナー)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="所感"&gt;所感&lt;/h3&gt;
-
-&lt;p&gt;tutum.coがDockerHubみたいになっていてDockerイメージをprivateで管理することができます。ただしDockerを使うためのOSがデフォルトがUbuntuという謎構成だったのがつらいのと、とりあえず動くっちゃ動くのですが、MySQLコンテナーはデータの永続化させようとすると色々面倒くさいのでMySQLをコンテナーにするのはよくないなぁと思いました。&lt;/p&gt;
-
-&lt;p&gt;すべてをDockerのコンテナーとして動かすというのは成功しましたが実際の本番運用はつらいです。&lt;/p&gt;
-
-&lt;p&gt;ちなみにGoアプリをDockerにのっけるやりかたはこちらのスライドをどうぞ&lt;/p&gt;
-
-&lt;script async class="speakerdeck-embed" data-id="d598024a1bda473eb8fcc563ee644d65" data-ratio="1.33333333333333" src="//speakerdeck.com/assets/embed.js"&gt;&lt;/script&gt;
-
-&lt;h2 id="digitalocean-google-cloud-sql"&gt;DigitalOcean + Google Cloud SQL&lt;/h2&gt;
-
-&lt;p&gt;MySQLはやはり外部にもった方がいろいろ扱いやすいなと思い、AWSのRDSは高いしクラウド破産しかねないので&lt;a href="https://cloud.google.com/products/?hl=ja"&gt;Google Cloud Platform&lt;/a&gt;のサービス、&lt;a href="https://cloud.google.com/sql/?hl=ja"&gt;Cloud SQL&lt;/a&gt;を使うことにしました。&lt;/p&gt;
-
-&lt;p&gt;やっぱりMySQLとかデータ系はそれ専用のサービス使うのが一番良いなって思います。&lt;/p&gt;
-
-&lt;p&gt;そして、 Docker on Ubuntuをやめて、基本のDocker on CoreOSにしました。&lt;/p&gt;
-
-&lt;h3 id="os"&gt;OS&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;CoreOS&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="環境構築"&gt;環境構築&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Docker&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="webサーバー"&gt;Webサーバー&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;GoのGoji(コンテナー)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="db"&gt;DB&lt;/h3&gt;
-
-&lt;ul&gt;
-&lt;li&gt;MySQL(Google Cloud SQL)&lt;/li&gt;
-&lt;li&gt;Redis(コンテナー)&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id="所感"&gt;所感&lt;/h3&gt;
-
-&lt;p&gt;これでやっと安心して運用できるかなと思いました。スケールアウトはできないですが、そこまでアクティブなサービスではないので妥協しています。&lt;/p&gt;
-
-&lt;h2 id="まとめ"&gt;まとめ&lt;/h2&gt;
-
-&lt;p&gt;こんな感じでGoで個人開発したものを安く公開できる環境は整ってきていると思うので、Go人口が増えたら良いなぁと思ってます。&lt;/p&gt;
-
-&lt;p&gt;ちなみに&lt;a href="https://www.digitalocean.com/?refcode=f40307411b2b"&gt;こちらからDigitalOceanに登録&lt;/a&gt;すると$10のクーポンがもらえちゃうよ！&lt;/p&gt;
-
-&lt;p&gt;Go、楽しいよ、Go!!&lt;/p&gt;
 </content>
   </entry>
 </feed>
