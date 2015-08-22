@@ -10,6 +10,8 @@ tags:
 
 個人で10年以上運用している（放置している）[原付改造カスタムブログ::makingmachinez](http://www.makingmachinez.com/)という黒歴史満載の超ダサいブログがあるのですが、そのブログをmiddleman化したのでその経緯でも書いてみます。
 
+middleman化したリポジトリは最後にのっけておきます。
+
 READMORE
 
 ## そもそもブログじゃなかった
@@ -72,6 +74,8 @@ PVは全盛期で20,000/Monthありました。
 記事数が100記事くらいあるので静的なHTMLからどうやってmarkdownにしようかと、手動コピペも頑張ればいける量だったので手動でも良いかなとも思いましたが、そこはやはり変換スクリプトつくってやるべきだよなと思いrubyで変換スクリプト書きました。
 
 記事構成が `/yyyy/mm/#{id}.html` だったので、これを `yyyy-mm-dd-id.html.md` に変換して記事の中身だけをスクレイピングするスクリプトを用意して変換しました。
+
+[middleman化したリポジトリはこちら](https://github.com/makingmachinez/makingmachinez.github.io)
 
 ## 所感
 
