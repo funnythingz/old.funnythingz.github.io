@@ -14,13 +14,15 @@
     <link rel="alternate" href="http://www.funnythingz.com/2015/08/22/makingmachinez.html"/>
     <id>http://www.funnythingz.com/2015/08/22/makingmachinez.html</id>
     <published>2015-08-22T21:06:00+09:00</published>
-    <updated>2015-08-22T22:12:05+09:00</updated>
+    <updated>2015-08-22T22:16:32+09:00</updated>
     <author>
       <name>funnythingz</name>
     </author>
     <content type="html">&lt;p&gt;こんにちは、funnythingzです。夏が終わりますね。海も山も特に行ってません。夏らしいことは何もしてないで引きこもっています。&lt;/p&gt;
 
 &lt;p&gt;個人で10年以上運用している（放置している）&lt;a href="http://www.makingmachinez.com/"&gt;原付改造カスタムブログ::makingmachinez&lt;/a&gt;という黒歴史満載の超ダサいブログがあるのですが、そのブログをmiddleman化したのでその経緯でも書いてみます。&lt;/p&gt;
+
+&lt;p&gt;middleman化したリポジトリは最後にのっけておきます。&lt;/p&gt;
 
 &lt;p&gt;&lt;/p&gt;
 
@@ -92,6 +94,8 @@
 &lt;p&gt;記事数が100記事くらいあるので静的なHTMLからどうやってmarkdownにしようかと、手動コピペも頑張ればいける量だったので手動でも良いかなとも思いましたが、そこはやはり変換スクリプトつくってやるべきだよなと思いrubyで変換スクリプト書きました。&lt;/p&gt;
 
 &lt;p&gt;記事構成が &lt;code&gt;/yyyy/mm/#{id}.html&lt;/code&gt; だったので、これを &lt;code&gt;yyyy-mm-dd-id.html.md&lt;/code&gt; に変換して記事の中身だけをスクレイピングするスクリプトを用意して変換しました。&lt;/p&gt;
+
+&lt;p&gt;&lt;a href="https://github.com/makingmachinez/makingmachinez.github.io"&gt;middleman化したリポジトリはこちら&lt;/a&gt;&lt;/p&gt;
 
 &lt;h2 id="所感"&gt;所感&lt;/h2&gt;
 
