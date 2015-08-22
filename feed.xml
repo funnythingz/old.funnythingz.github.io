@@ -7,7 +7,7 @@
   <link href="http://www.funnythingz.com/feed.xml" rel="self"/>
   <updated>2015-08-08T15:36:00+09:00</updated>
   <author>
-    <name>Blog Author</name>
+    <name>funnythingz</name>
   </author>
   <entry>
     <title>冷やし酸辣湯麺をつくったのでレシピをメモっとく</title>
@@ -16,7 +16,7 @@
     <published>2015-08-08T15:36:00+09:00</published>
     <updated>2015-08-08T16:03:37+09:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>funnythingz</name>
     </author>
     <content type="html">&lt;p&gt;自宅でも冷やし酸辣湯麺を食べたくて自分なりのレシピをつくってみたのでメモっとく。&lt;/p&gt;
 
@@ -95,7 +95,7 @@
     <published>2015-08-08T11:32:00+09:00</published>
     <updated>2015-08-08T12:29:26+09:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>funnythingz</name>
     </author>
     <content type="html">&lt;p&gt;今週もたくさん麺を食べた。
 お店で食べた麺から自宅でつくって食べた麺までいろいろ紹介していく。&lt;/p&gt;
@@ -164,7 +164,7 @@
     <published>2015-08-05T16:33:00+09:00</published>
     <updated>2015-08-08T10:55:49+09:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>funnythingz</name>
     </author>
     <content type="html">&lt;p&gt;ubuntuもApacheも超久しぶりにさわったのでmod_rewrite有効にするだけで超ハマってしまった。&lt;/p&gt;
 
@@ -199,7 +199,7 @@ service apache2 restart
     <published>2015-05-12T23:59:00+09:00</published>
     <updated>2015-05-13T00:34:57+09:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>funnythingz</name>
     </author>
     <content type="html">&lt;p&gt;メダル不要機をつけたのでとにかく打ちまくった。&lt;/p&gt;
 
@@ -219,7 +219,7 @@ service apache2 restart
     <published>2015-05-11T23:22:00+09:00</published>
     <updated>2015-05-13T00:20:20+09:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>funnythingz</name>
     </author>
     <content type="html">&lt;p&gt;大好きな名機、アリストクラートのマッハGoGoGo(4号機)を買ってしまった。といっても初めて買ったわけではなくて実は2台目である。
 1台目は断捨離がてら処分してしまったのだが、やはり思い入れのある遊技機なので再び買ってしまった。&lt;/p&gt;
@@ -241,7 +241,7 @@ service apache2 restart
     <published>2015-04-25T20:40:00+09:00</published>
     <updated>2015-04-26T18:19:41+09:00</updated>
     <author>
-      <name>Article Author</name>
+      <name>funnythingz</name>
     </author>
     <content type="html">&lt;p&gt;こんにちは、funnythingzです。Webサービスやスマホアプリの開発とかやってます。&lt;/p&gt;
 
