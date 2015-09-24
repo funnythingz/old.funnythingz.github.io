@@ -3,7 +3,7 @@ title: 10年以上運用しているブログをmiddleman化するまでのお�
 date: 2015-08-22 21:06 JST
 tags:
 - middleman
-- blog
+- diary
 ---
 
 こんにちは、funnythingzです。夏が終わりますね。海も山も特に行ってません。夏らしいことは何もしてないで引きこもっています。
