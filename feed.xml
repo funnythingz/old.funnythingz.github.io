@@ -5,16 +5,27 @@
   <id>http://www.funnythingz.com</id>
   <link href="http://www.funnythingz.com"/>
   <link href="http://www.funnythingz.com/feed.xml" rel="self"/>
-  <updated>2015-08-22T21:06:00+09:00</updated>
+  <updated>2015-09-24T23:57:00+09:00</updated>
   <author>
     <name>funnythingz</name>
   </author>
+  <entry>
+    <title>analytics</title>
+    <link rel="alternate" href="http://www.funnythingz.com/2015/09/24/analytics.html"/>
+    <id>http://www.funnythingz.com/2015/09/24/analytics.html</id>
+    <published>2015-09-24T23:57:00+09:00</published>
+    <updated>2015-09-24T23:57:01+09:00</updated>
+    <author>
+      <name>funnythingz</name>
+    </author>
+    <content type="html"></content>
+  </entry>
   <entry>
     <title>10年以上運用しているブログをmiddleman化するまでのお話</title>
     <link rel="alternate" href="http://www.funnythingz.com/2015/08/22/makingmachinez.html"/>
     <id>http://www.funnythingz.com/2015/08/22/makingmachinez.html</id>
     <published>2015-08-22T21:06:00+09:00</published>
-    <updated>2015-08-22T22:16:32+09:00</updated>
+    <updated>2015-09-25T00:00:31+09:00</updated>
     <author>
       <name>funnythingz</name>
     </author>
@@ -115,7 +126,7 @@
     <link rel="alternate" href="http://www.funnythingz.com/2015/08/08/cold-men.html"/>
     <id>http://www.funnythingz.com/2015/08/08/cold-men.html</id>
     <published>2015-08-08T15:36:00+09:00</published>
-    <updated>2015-08-08T16:03:37+09:00</updated>
+    <updated>2015-09-24T23:58:46+09:00</updated>
     <author>
       <name>funnythingz</name>
     </author>
@@ -194,7 +205,7 @@
     <link rel="alternate" href="http://www.funnythingz.com/2015/08/08/mens.html"/>
     <id>http://www.funnythingz.com/2015/08/08/mens.html</id>
     <published>2015-08-08T11:32:00+09:00</published>
-    <updated>2015-08-08T12:29:26+09:00</updated>
+    <updated>2015-09-24T23:58:57+09:00</updated>
     <author>
       <name>funnythingz</name>
     </author>
@@ -311,28 +322,6 @@ service apache2 restart
 &lt;p&gt;&lt;/p&gt;
 
 &lt;iframe width="640" height="480" src="https://www.youtube.com/embed/AL2sjpzJyAQ" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
-</content>
-  </entry>
-  <entry>
-    <title>パチスロ マッハGoGoGo(4号機)を買ってしまった</title>
-    <link rel="alternate" href="http://www.funnythingz.com/2015/05/11/speadracer.html"/>
-    <id>http://www.funnythingz.com/2015/05/11/speadracer.html</id>
-    <published>2015-05-11T23:22:00+09:00</published>
-    <updated>2015-05-13T00:20:20+09:00</updated>
-    <author>
-      <name>funnythingz</name>
-    </author>
-    <content type="html">&lt;p&gt;大好きな名機、アリストクラートのマッハGoGoGo(4号機)を買ってしまった。といっても初めて買ったわけではなくて実は2台目である。
-1台目は断捨離がてら処分してしまったのだが、やはり思い入れのある遊技機なので再び買ってしまった。&lt;/p&gt;
-
-&lt;p&gt;&lt;/p&gt;
-
-&lt;p&gt;マッハGoGoGoはアリストクラートの巨人の星に続くB-Type。とにかく演出が楽しくて夢中になって打った記憶がある。
-そんなに爆発するような台ではないがゴーゴータイムの期待値は高く、ゴーゴータイムをひくまでやめられなかったのが懐かしい。&lt;/p&gt;
-
-&lt;p&gt;というわけでとりあえず回してみたので動画をはっておこう。&lt;/p&gt;
-
-&lt;iframe width="640" height="480" src="https://www.youtube.com/embed/HJP2HrkfDg8" frameborder="0" allowfullscreen&gt;&lt;/iframe&gt;
 </content>
   </entry>
 </feed>
