@@ -10,15 +10,122 @@
     <name>funnythingz</name>
   </author>
   <entry>
-    <title>analytics</title>
+    <title>middleman化した原付改造ブログのその後の数値的なもの</title>
     <link rel="alternate" href="http://www.funnythingz.com/2015/09/24/analytics.html"/>
     <id>http://www.funnythingz.com/2015/09/24/analytics.html</id>
     <published>2015-09-24T23:57:00+09:00</published>
-    <updated>2015-09-24T23:57:01+09:00</updated>
+    <updated>2015-09-25T01:43:45+09:00</updated>
     <author>
       <name>funnythingz</name>
     </author>
-    <content type="html"></content>
+    <content type="html">&lt;p&gt;Hello world. 皆さんこんにちは、funnythingzです。&lt;/p&gt;
+
+&lt;p&gt;先日、リファクタ大好きな僕は過去につくった黒歴史満載の超ダサいブログ(&lt;a href="http://www.makingmachinez.com"&gt;原付改造カスタムブログ&lt;/a&gt;)をmiddleman化してリファクタしたのですが、その後数値がどうなったのかをここに記載してみたいと思います。&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;
+
+&lt;h2 id="なんとなく目標としていたこと"&gt;なんとなく目標としていたこと&lt;/h2&gt;
+
+&lt;p&gt;なんとなく目標にしていたことリストです。&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;PV 3倍 (30,000PV/Month)&lt;/li&gt;
+&lt;li&gt;google検索結果上位にきてほしい（&lt;code&gt;原付改造&lt;/code&gt; で10位以内）&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id="middleman化した件と施策について"&gt;middleman化した件と施策について&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href="http://www.funnythingz.com/2015/08/22/makingmachinez.html"&gt;middleman化した話についてはこちら&lt;/a&gt;をご覧くださいませ。&lt;/p&gt;
+
+&lt;h3 id="middleman化した際に行った施策とか"&gt;middleman化した際に行った施策とか&lt;/h3&gt;
+
+&lt;ul&gt;
+&lt;li&gt;アーカイブページをちゃんとつくった
+
+&lt;ul&gt;
+&lt;li&gt;年別&lt;/li&gt;
+&lt;li&gt;タグ別&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;アーカイブページをつくることで被リンク増加&lt;/li&gt;
+&lt;li&gt;サイト内回遊率の向上&lt;/li&gt;
+&lt;li&gt;ソーシャルボタンの設置&lt;/li&gt;
+&lt;li&gt;OGP系のMETAタグ整備&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;こんな感じでmiddleman化することでサボっていた部分をちゃんと対応しみました。&lt;/p&gt;
+
+&lt;h2 id="いきなり結果発表"&gt;いきなり結果発表&lt;/h2&gt;
+
+&lt;p&gt;で、結果どうだったの？ってところでmiddleman化前と後を比較してみました。&lt;/p&gt;
+
+&lt;h3 id="セッション数"&gt;セッション数&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src="/images/20150924/session2-b58e10c2.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/images/20150924/session1-fd3e2e39.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;25.76% アップ！&lt;/p&gt;
+
+&lt;p&gt;全体的にも上昇傾向にあるのかなーと思えます。良い感じです！&lt;/p&gt;
+
+&lt;h3 id="ユーザー数"&gt;ユーザー数&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src="/images/20150924/user2-f22aaf8f.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/images/20150924/user1-e5816c28.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;22.21% アップ！&lt;/p&gt;
+
+&lt;p&gt;セッション数が増えたということは比例してユーザー数も増えているということなのでこちらも良い感じです。&lt;/p&gt;
+
+&lt;p&gt;このまま上昇傾向が続けば良いですね。&lt;/p&gt;
+
+&lt;h3 id="ページビュー数-pv数"&gt;ページビュー数(PV数)&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src="/images/20150924/pv2-5041f43c.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/images/20150924/pv1-a2a9d45f.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;29.30% アップ！&lt;/p&gt;
+
+&lt;p&gt;ユーザー数とセッション数が増えたのでPV数も9,750PV/Monthから12,607PV/Monthへと3,000PV近く上昇しました。&lt;/p&gt;
+
+&lt;p&gt;アーカイブページでの回遊がうまくいったんじゃないかと思います。&lt;/p&gt;
+
+&lt;p&gt;とりあえず1ヶ月での結果なのでじわじわとこのまま上がってくれればと思ってます。&lt;/p&gt;
+
+&lt;h3 id="その他の数値"&gt;その他の数値&lt;/h3&gt;
+
+&lt;p&gt;&lt;img src="/images/20150924/other-ce0ffcdc.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;新規セッション数がわずかに減ってますが、それ以外は確実に伸びています。&lt;/p&gt;
+
+&lt;p&gt;直帰率が下がっていて、平均セッション時間とページ/セッションが伸びているので確実にサイトの回遊が良い感じになってきていると思えます。&lt;/p&gt;
+
+&lt;p&gt;あとは新規コンテンツを増やしていったりすればさらに数値はよくなるのではないかと思います。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/images/20150924/search-f014eaa2.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src="/images/20150924/organic-a9b05050.png" /&gt;&lt;/p&gt;
+
+&lt;p&gt;オーガニックでの流入もmiddleman化する前に比べて27.34%アップしています。このまま上昇していってもらいたいです。&lt;/p&gt;
+
+&lt;h2 id="ということで雑感"&gt;ということで雑感&lt;/h2&gt;
+
+&lt;p&gt;コンテンツ自体はまったく更新していませんが、middleman化してリファクタしたことでアーカイブやMETA系などを整備しなおすことで、施策後1ヶ月で、検索流入やセッション数やPV数などの数値を上昇させることができました。&lt;/p&gt;
+
+&lt;p&gt;もちろんコンテンツを充実させればさらなる数値の向上が見込めると思います。が、すでに原付の改造をしていないので新規でブログを更新することはないと思いますが、何かしらのコンテンツは追加していきたいなと思っています。&lt;/p&gt;
+
+&lt;p&gt;ということで当初の目標であった &lt;code&gt;PV 3倍 (30,000PV/Month)&lt;/code&gt; の数値は達成できませんでしたが今後も上昇傾向でいけるように改善していきたいと思います。&lt;/p&gt;
+
+&lt;h2 id="さらに雑感"&gt;さらに雑感&lt;/h2&gt;
+
+&lt;p&gt;Adsenseも設置しなおしてみたのですが、Adsenseの収益は倍になりました。&lt;/p&gt;
+
+&lt;p&gt;元々の収益が少ないから大した金額ではありませぬが。&lt;/p&gt;
+
+&lt;p&gt;おしまい。&lt;/p&gt;
+</content>
   </entry>
   <entry>
     <title>10年以上運用しているブログをmiddleman化するまでのお話</title>
