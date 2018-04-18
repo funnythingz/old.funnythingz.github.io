@@ -63,23 +63,21 @@
 
 <p>まずconfig書き換えます。
 <code>/etc/apache2/apache2.conf</code></p>
-<pre class="highlight shell"><code>&lt;Directory /var/www/&gt;
+<div class="highlight"><pre class="highlight shell"><code>&lt;Directory /var/www/&gt;
   Options Indexes FollowSymLinks
   AllowOverride All
   Require all granted
 &lt;/Directory&gt;
-</code></pre>
-
+</code></pre></div>
 <p>で、moduleを有効にするコマンドを叩きます。</p>
-<pre class="highlight shell"><code><span class="gp">$ </span>sudo a2enmod rewrite
+<div class="highlight"><pre class="highlight shell"><code><span class="nv">$ </span><span class="nb">sudo </span>a2enmod rewrite
 Enabling module rewrite.
 To activate the new configuration, you need to run:
 service apache2 restart
 
-<span class="gp">$ </span>sudo service apache2 restart
+<span class="nv">$ </span><span class="nb">sudo </span>service apache2 restart
 <span class="k">*</span> Restarting web server apache2
-</code></pre>
-
+</code></pre></div>
 <p>で、無事にmod_rewrite有効になったー。</p>
 
 <p>めんどくさい…。</p>
