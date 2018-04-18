@@ -115,7 +115,7 @@ set :markdown, fenced_code_blocks: true, smartypants: true, with_toc_data: true,
 activate :syntax
 
 # slim
-set :slim, pretty: true, sort_attrs: false, format: :html5 
+set :slim, pretty: true, sort_attrs: false, format: :html
 
 # minify
 configure :build do
