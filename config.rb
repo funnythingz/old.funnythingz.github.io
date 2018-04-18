@@ -98,6 +98,7 @@ configure :build do
 
   # Or use a different image path
   # set :http_prefix, "/Content/images/"
+  activate :minify_html, remove_quotes: false, remove_intertag_spaces: true
 end
 
 activate :deploy do |deploy|
@@ -116,8 +117,3 @@ activate :syntax
 
 # slim
 set :slim, pretty: true, sort_attrs: false, format: :html
-
-# minify
-configure :build do
-  activate :minify_html, remove_quotes: false, remove_intertag_spaces: true
-end
