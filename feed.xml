@@ -5,10 +5,34 @@
   <id>http://www.funnythingz.com</id>
   <link href="http://www.funnythingz.com"/>
   <link href="http://www.funnythingz.com/feed.xml" rel="self"/>
-  <updated>2016-04-03T13:38:00Z</updated>
+  <updated>2019-08-04T06:55:00Z</updated>
   <author>
     <name>funnythingz</name>
   </author>
+  <entry>
+    <title>Google Photo の写真を埋め込む方法</title>
+    <link rel="alternate" href="http://www.funnythingz.com/2019/08/04/google-photo-embed.html"/>
+    <id>http://www.funnythingz.com/2019/08/04/google-photo-embed.html</id>
+    <published>2019-08-04T06:55:00Z</published>
+    <updated>2019-08-04T16:11:36+09:00</updated>
+    <author>
+      <name>funnythingz</name>
+    </author>
+    <content type="html">&lt;p&gt;くっそ久し振りのブログです。セッションもPVもほとんどないのですが、なんとなくまたブログでも書いてみようと思いstyleを一部修正したりしてみました。&lt;/p&gt;
+
+&lt;p&gt;最近はnoteに記事を投稿してみたりしています。今はブログよりもYouTubeなんですかねぇ。時代は変わったものです。&lt;/p&gt;
+
+&lt;p&gt;とりあえず久し振りの投稿なのでGooglePhotoの画像を引っ張ってみようと思います。&lt;/p&gt;
+
+&lt;p&gt;ただリンクシェアのURLをコピペするだけではできませんでした。シェアしたURLを&lt;a href="https://ctrlq.org/google/photos/"&gt;Embed Google Photos&lt;/a&gt;というサービス上で埋め込み用URLを生成してくれるようです。&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt="9qi54p54z wg68ykuvr60jgifzuzzrteafdszqlhonxscnml3bixbsle3m6lbbuzclsrdduz0tlzit8y9iiri0wpcqweaxonxf8iq3wvi snvp t8qojwyh7ex2bjd8 bi8hoxq70ze=w2400" src="https://lh3.googleusercontent.com/9QI54P54z_WG68ykUvr60jGIfZuzZRTEAFDszqLhOnXScnML3biXBsle3M6LBbUZClsrDDUZ0tLzit8Y9IIRi0WPCQweAXOnxF8IQ3wVi-SnVP_t8QOJwyh7Ex2bjD8-Bi8hoXq70ZE=w2400" /&gt;&lt;/p&gt;
+
+&lt;p&gt;表示されましたかね。markdownをガッツリ書くこともないので記法も最近あやしいです。&lt;/p&gt;
+
+&lt;p&gt;がんばっていこう！&lt;/p&gt;
+</content>
+  </entry>
   <entry>
     <title>兎に角の油そばの再現レシピ ver.1</title>
     <link rel="alternate" href="http://www.funnythingz.com/2016/04/03/tonikaku-recipe.html"/>
@@ -495,39 +519,6 @@
 &lt;p&gt;他に毎朝袋のインスタントラーメンを食べてるし、おやつにカップ麺も食べてたし、なんならさっきうどん食ったし。&lt;/p&gt;
 
 &lt;p&gt;米食おう。&lt;/p&gt;
-</content>
-  </entry>
-  <entry>
-    <title>ubuntuでmod_rewrite有効するのめっちゃハマった</title>
-    <link rel="alternate" href="http://www.funnythingz.com/2015/08/05/rewrite.html"/>
-    <id>http://www.funnythingz.com/2015/08/05/rewrite.html</id>
-    <published>2015-08-05T07:33:00Z</published>
-    <updated>2015-08-08T10:55:49+09:00</updated>
-    <author>
-      <name>funnythingz</name>
-    </author>
-    <content type="html">&lt;p&gt;ubuntuもApacheも超久しぶりにさわったのでmod_rewrite有効にするだけで超ハマってしまった。&lt;/p&gt;
-
-&lt;p&gt;まずconfig書き換えます。
-&lt;code&gt;/etc/apache2/apache2.conf&lt;/code&gt;&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre class="highlight shell"&gt;&lt;code&gt;&amp;lt;Directory /var/www/&amp;gt;
-  Options Indexes FollowSymLinks
-  AllowOverride All
-  Require all granted
-&amp;lt;/Directory&amp;gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;で、moduleを有効にするコマンドを叩きます。&lt;/p&gt;
-&lt;div class="highlight"&gt;&lt;pre class="highlight shell"&gt;&lt;code&gt;&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;sudo &lt;/span&gt;a2enmod rewrite
-Enabling module rewrite.
-To activate the new configuration, you need to run:
-service apache2 restart
-
-&lt;span class="nv"&gt;$ &lt;/span&gt;&lt;span class="nb"&gt;sudo &lt;/span&gt;service apache2 restart
-&lt;span class="k"&gt;*&lt;/span&gt; Restarting web server apache2
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
-&lt;p&gt;で、無事にmod_rewrite有効になったー。&lt;/p&gt;
-
-&lt;p&gt;めんどくさい…。&lt;/p&gt;
 </content>
   </entry>
 </feed>
