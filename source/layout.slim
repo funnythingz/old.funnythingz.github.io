@@ -42,7 +42,7 @@ html
               i.fa.fa-paper-plane-o
               |  #{current_article.title}
               span.meta
-                = current_article.date.strftime('%b %e')
+                = current_article.date.strftime('%Y/%-m/%-d')
             ul.external-link
               li
                 a href="https://b.hatena.ne.jp/entry/https://www.funnythingz.com#{current_article.url}" class="hatena-bookmark-button" data-hatena-bookmark-title="#{current_article.title}" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"
