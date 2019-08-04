@@ -32,9 +32,10 @@ per_page: 10
           window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));
     = article.summary
     - unless article.summary == article.body
-      = link_to article
-        i.fa.fa-arrow-circle-right
-        |  READ MORE
+      .readmore
+        = link_to article
+          i.fa.fa-arrow-circle-right
+          |  READ MORE
 - if paginate && num_pages > 1
   p
     | Page
