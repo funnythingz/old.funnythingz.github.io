@@ -12,11 +12,11 @@ per_page: 10
         = article.date.strftime('%b %e')
     ul.external-link
       li
-        a href="http://b.hatena.ne.jp/entry/http://www.funnythingz.com#{article.url}" class="hatena-bookmark-button" data-hatena-bookmark-title="#{article.title}" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"
+        a href="https://b.hatena.ne.jp/entry/https://www.funnythingz.com#{article.url}" class="hatena-bookmark-button" data-hatena-bookmark-title="#{article.title}" data-hatena-bookmark-layout="standard-balloon" data-hatena-bookmark-lang="ja" title="このエントリーをはてなブックマークに追加"
           img[src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;"]
           script[type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"]
       li
-        .fb-like data-href="http://www.funnythingz.com#{article.url}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"
+        .fb-like data-href="https://www.funnythingz.com#{article.url}" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"
         #fb-root
         javascript:
           (function(d, s, id) {
@@ -27,7 +27,7 @@ per_page: 10
           fjs.parentNode.insertBefore(js, fjs);
           }(document, 'script', 'facebook-jssdk'));
       li
-        a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.funnythingz.com#{article.url}" data-via="funnythingz" data-text="#{article.title}"
+        a href="https://twitter.com/share" class="twitter-share-button" data-url="https://www.funnythingz.com#{article.url}" data-via="funnythingz" data-text="#{article.title}"
         javascript:
           window.twttr=(function(d,s,id){var t,js,fjs=d.getElementsByTagName(s)[0];if(d.getElementById(id)){return}js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);return window.twttr||(t={_e:[],ready:function(f){t._e.push(f)}})}(document,"script","twitter-wjs"));
     = article.summary
