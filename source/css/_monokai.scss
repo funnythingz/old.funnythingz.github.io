@@ -1,7 +1,7 @@
 .highlight {
   background-color: #333;
   padding: 4px 6px;
-  @include border-radius(4px);
+  border-radius: 4px;
 
   .hll {
     background-color: #49483e

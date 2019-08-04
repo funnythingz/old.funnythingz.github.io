@@ -4,11 +4,10 @@ per_page: 10
 ---
 
 - page_articles.each_with_index do |article, i|
-  article.entry
+  article.summary
     h1
       = link_to article
-        i.fa.fa-paper-plane-o
-        |  #{article.title}
+        | #{article.title}
       span.meta
         = article.date.strftime('%b %e')
     ul.external-link
